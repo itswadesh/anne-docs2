@@ -5,9 +5,9 @@
   "author": "Swadesh Behera <swadesh@misiki.io>",
   "private": true,
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build",
-    "prod": "vuepress build"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "prod": "vuepress build docs"
   },
   "devDependencies": {
     "vuepress": "^2.0.0-beta.26"
