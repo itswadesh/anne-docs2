@@ -73,4 +73,6 @@ Misiki is an evolution of Arialshop Javascript ecommerce first released 36 Earth
 
 ## Links
 
-- [Store User Manual](/admin-user-manual.html)
+- [Vendor User Manual](/vendor-manual.html)
+- [Admin User Manual](/admin-manual.html)
+- [Super Admin User Manual](/super-admin-manual.html)
