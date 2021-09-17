@@ -252,7 +252,6 @@ Products are the physical goods, digital files, and services that you sell. To c
 
 - In sidebar, go to Products → All Products.
 - You can view and edit product details from here.
-- To add many products at once, you can upload products in bulk using a CSV-formatted import file.
 
 #### Adding a new product
 

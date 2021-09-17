@@ -734,7 +734,7 @@ Products are the physical goods, digital files, and services that you sell. To c
 
 ### Products Bulk Import
 
-The product bulk upload feature will help you to import your old product list into your catalog system. There is a CSV template to help you, use the template to prepare your product list.
+The product bulk upload feature will help you to import your old product list into your catalog system. There is a CSV template to help you, this template is like a sample, use the template to prepare your product list.
 
 - In Product list page, click on `Import Products`.
 
@@ -747,6 +747,84 @@ The product bulk upload feature will help you to import your old product list in
 The first row of the template CSV file is the header. Don’t change this row. The system needs this row unchanged to populate the product into the database.
 
 :::
+
+In csv some fields are mandatory as shown below
+
+1. `barcode or sku` → barcode or sku one of them is mandatory in each raw, otherwise it will show error like barcode and sku not provided.
+2. style_code → style_code is provided via vendor for each item.
+3. `ean_no` → EAN / UPC Number is used for European Article Number.
+4. `article_code` → article_code is provided via vendor for each item.
+5. `product_master_id` → product_master_id is used to group same product with diffrent options. like- color, size etc. It will defined via vendor.
+6. `name` → name is provided via the vendor for its better navigation.
+7. `description` → short desciption of product.
+8. brand_id and brand →
+
+- brand is used for brand name and brand_id is used for unique brand id which provided via vendor.
+- In case you want to add brand in product you have to provide both, otherwise brand will not assign to product.
+- If you provide both of them then it will look for brand, if not found then create brand and will assign to product.
+
+9. categories →
+
+- categories are pipe(|) seprated multiple category id's, which defind via vendor. You can also provide single id.
+- In case you provide at least one category id , it will look for category. And if categories found then assined to product.
+- In at least one category found case, it will automatically choose category from categories.
+
+10. `mrp` → mrp is a marketing price , which can not be negative.
+11. `price` → mrp is a selling price , which can not be negative.
+12. `hsn` → hsn is Harmonised System of Nomenclature code and it is mandatory in country india. In other country it is not mandatory.
+13. tax → payable per unit of good or service product.
+14. color and color_code →
+
+- Color is used for color name and color_code is used for unique color code.
+- It will look for color via color code and if not found then it will create color.
+- At last it will assign color to product.
+
+15. size →
+
+- you can provide any size to product.
+- It will look for size via its name and if not found then create a new size.
+- At last it will assign size to product.
+
+16. gender → gender can be male, female or unisex.
+17. `currency` → currency is used for country currency.
+18. `vendor_phone`, `vendor_email` and `vendor_name` → vendor info in mandatory, if not passed then it will assign logged in user to product as vendor.
+19. `manufacturer` → manufacture means where the product is manufactured.
+20. key_features → key_features is a pipe(|) separated list of features.
+21. product_specifications →
+
+- product_specifications is provided as pipe(|) separated and inside it :: separated.
+- It will look specifications and in case not found then it will create new feature.
+- At last it will assing specifications to product.
+
+22. product_details →
+
+- product_details is provided as pipe(|) separated and inside it :: separated.
+- It will look details and in case not found then it will create new feature.
+- At last it will assing details to product.
+
+23. return_info → return_info is text value of return policy.
+24. `country_of_origin` → It is the country of origin of the product.
+25. img and images →
+
+- Images is comma(,) separated list images.
+- It will upload images into respected servers.
+- It will automatically choose img from images.
+
+26. condition → condition can be new, old or refurnished.
+27. gtin → Global Trade Item Number (GTIN) is a unique and internationally recognized identifier for a product.
+28. stock → In case of inventory updation you can provide stock in numbers.
+29. item_id → item_id is a unique id of product which is defined via vendor.
+30. warranty → warranty is info about product warranty in text.
+31. age_min,age_max and age_unit → age parameters are used for age group.
+32. keywords → keywords are used for better product search.
+33. type → type can be physical or digital.
+34. replace_allowed, return_allowed and return_validity_in_days → return and replace info about the product.
+35. metaTitle and metaDescription → The meta title and description tags are part of the HTML code on each product page and can be optimised separately for search engines. The meta title and description SEO explain to the search engine what this page is relevant for and for which terms it should rank
+
+36. sizechart → it is a image of sizechart. images will upload in respected servers.
+
+> In csv if any raw field contain `DELETE` then that perticular field will be deleted from that product.
+> HighLighted fields are mandatory.
 
 ### Popular Searches
 
