@@ -3,6 +3,7 @@ home: true
 heroImage: /images/doc.png
 actionText: Get Started →
 actionLink: /admin-user-manual.html
+
 # features:
 #   - title: Progressive
 #     details: Offline Ready Progressive Web App, Bleeding edge, Fast, Lightweight SPA (single page application) ecommerce.
