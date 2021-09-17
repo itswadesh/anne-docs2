@@ -726,21 +726,62 @@ In the size section there are the sizes of the different products. Its like vari
 
 ### Products
 
-Products are the physical goods, digital files, and services that you sell. To create a product, you need to specify the name and upload product images. In addition, you can add product details that help your clients better understand the product. For example add available sizes, SKU, description, etc. You don't have to provide every detail for each product.
-
-- In sidebar, go to Products → All Products.
-- You can view and edit product details from here.
-- To add many products at once, you can upload products in bulk using a CSV-formatted import file.
-
-### Products Bulk Import
-
-The product bulk upload feature will help you to import your old product list into your catalog system. There is a CSV template to help you, this template is like a sample, use the template to prepare your product list.
-
+- You can upload products in bulk using a CSV-formatted import file.
 - In Product list page, click on `Import Products`.
+- It will redirect you to product import page. There you can import csv file.
 
 ![Image](./anne/product-import.png)
 
-- It will redirect you to product import page. There you can import csv file.
+### Popular Searches
+
+Popular Searches used for better navigation in product for customer.
+
+- In sidebar, go to Products → Popular Searches.
+
+**Create new Popular Searches**
+
+- Click on plus icon for create new popular Search.
+- Now you can fill name and popularity.
+- Click on save icon at right side of bottom.
+
+![Image](./anne/popular-searches1.png)
+
+**Popular searches List**
+
+- You can edit,clone and delete popular searches from here.
+
+![Image](./anne/popular-searches.png)
+
+**Popular Searches Export**
+
+- You can export all yours popular searches in the csv format by going to the manage popular searches page where the popular searches grid is displayed. On the right corner of the grid there is an excel logo from where the you can export the csv which will have grid columns.
+
+![Image](./anne/excel-and-search.png)
+
+## Import And Export
+
+- In import you can add product and category in bulk.
+
+- The product bulk upload feature will help you to import your old product list into your catalog system. There is a CSV template to help you, this template is like a sample, use the template to prepare your product list.
+
+- In Export you can get data in csv format file and also able to download it.
+
+### Import Product
+
+- Product create one by one take a lot of time so for add product in bulk import product comes handy.
+- Product import in store through is the fastest way to upload catalog or make bulk changes to products in an existing Anne store catalog.
+- When importing, Anne converts the data from the uploaded import file into products in your online store.
+- Only CSV format file allowed to import.
+- You can also see the sample import file format.
+
+- Once you’ve prepared your CSV file, you can import it into your store
+
+  - In sidebar, go to Import/Export → Import Product.
+  - Click Import Products.
+  - Click Choose file and select the CSV file from your computer.
+  - After Sumit file wait for somtime and you will see all products thorough import details.
+
+![Image](./anne/import-product.png)
 
 ::: warning
 
@@ -826,60 +867,6 @@ In csv some fields are mandatory as shown below
 > In csv if any raw field contain `DELETE` then that perticular field will be deleted from that product.
 > HighLighted fields are mandatory.
 
-### Popular Searches
-
-Popular Searches used for better navigation in product for customer.
-
-- In sidebar, go to Products → Popular Searches.
-
-**Create new Popular Searches**
-
-- Click on plus icon for create new popular Search.
-- Now you can fill name and popularity.
-- Click on save icon at right side of bottom.
-
-![Image](./anne/popular-searches1.png)
-
-**Popular searches List**
-
-- You can edit,clone and delete popular searches from here.
-
-![Image](./anne/popular-searches.png)
-
-**Popular Searches Export**
-
-- You can export all yours popular searches in the csv format by going to the manage popular searches page where the popular searches grid is displayed. On the right corner of the grid there is an excel logo from where the you can export the csv which will have grid columns.
-
-![Image](./anne/excel-and-search.png)
-
-<!-- ### Manufacturers
-
-You can manage manufacturers or brands from this section. Marketplace visitor will be able to visit the BRAND page to see all listing from the same brands but different vendors. This feature will add extra values to your marketplace.
-
-![Image](./anne/manufacture.png) -->
-
-## Import And Export
-
-- In import you can add product and category in bulk.
-- In Export you can get data in csv format file and also able to download it.
-
-### Import Product
-
-- Product create one by one take a lot of time so for add product in bulk import product comes handy.
-- Product import in store through is the fastest way to upload catalog or make bulk changes to products in an existing Anne store catalog.
-- When importing, Anne converts the data from the uploaded import file into products in your online store.
-- Only CSV format file allowed to import.
-- You can also see the sample import file format.
-
-- Once you’ve prepared your CSV file, you can import it into your store
-
-  - In sidebar, go to Import/Export → Import Product.
-  - Click Import Products.
-  - Click Choose file and select the CSV file from your computer.
-  - After Sumit file wait for somtime and you will see all products thorough import details.
-
-![Image](./anne/import-product.png)
-
 #### Import Details
 
 - Import detail is at the same page of import product.
@@ -896,6 +883,35 @@ You can manage manufacturers or brands from this section. Marketplace visitor wi
 - When you csv file ready then choose file and upload it.
 
 ![Image](./anne/import-category.png)
+
+::: warning
+
+The first row of the template CSV file is the header. Don’t change this row. The system needs this row unchanged to populate the product into the database.
+
+:::
+
+In csv some fields are mandatory as shown below
+
+1. `category_id` → category_id is used for category Id , which is unique provided by vendor.
+   It will look for category and if not exist then create category with name.
+2. `category` → category is used for category name.
+3. parent_category_id → parent_category_id is used for category Id , which is unique provided by vendor.
+   It will look for category and if not exist then create category with name.
+4. parent_category → parent_category is used for parent category name.
+5. img → img contain the image link, image will upload into respected server.
+6. active → category info about its activation.
+7. position → position is used for sorting of categoies.
+8. megamenu → megamenu is used for meagamenu activation of category. means category will be liste in megamenu or not.
+9. featured → featured is used for category. means category will be shown to customer or not.
+10. shopbycategory → shopbycategory will allow customer to filter products via category.
+11. brand_id → brand_id contain the unique brand Id which provided by vendor. It will look for brand and if found then assign it to category.
+12. level → level are used to locate the category level, because its uses tree level approach.
+
+::: warning
+
+Category use level wise approach, Categories must be increasing format of level. Parent must comes before its child.
+
+:::
 
 ### Export
 
