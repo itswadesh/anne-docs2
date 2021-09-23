@@ -448,6 +448,34 @@ Social login configuration is done. Now customers will be able to login using Fa
 
 ### Image Management
 
+We use Imagekit.io for image optimization, so that exact size images will be delivered keeping the whole app performant
+
+### Imagekit setup
+
+- Create an account at imagekit.io
+- Navigate to External Storage
+
+- 1. Add new S3 origin
+
+  - Name it S3
+  - Select origin type = Amazon S3
+  - Enter S3 credentials in the provided textboxes
+  - Click submit
+
+- 2. Add new filesystem origin
+
+  - Name it Filesystem
+  - Select origin type = Web Folder
+  - Base URL = http://anne.biz
+  - Click submit
+
+- Click on URL endpoint at the imagekit sidebar
+  - Click on Add New URL endpoint
+    - Enter identified
+    - Select origin preference in the following sequence
+    - 1. S3
+    - 2. Filesystem
+
 The filesystem is the disk space where the application store all the images and other static files. The system provides a powerful filesystem abstraction. The Filesystem integration provides simple to use drivers for working with local filesystems, Amazon S3 and Azure Cloud Storage. Even better, it’s amazingly simple to switch between these storage options.
 
 By default, the platform uses the local public disk. The public disk uses the local driver and stores these files in storage/app/public.

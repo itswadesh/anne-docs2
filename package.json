@@ -1,6 +1,6 @@
 {
   "name": "anne-documentation",
-  "version": "6.0.0",
+  "version": "1.0.1",
   "description": "Documentation for Anne - A javascript e-commerce",
   "author": "Swadesh Behera <swadesh@misiki.io>",
   "private": true,
@@ -20,5 +20,9 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "dependencies": {
+    "@vuepress/plugin-docsearch": "^2.0.0-alpha.1",
+    "vuepress-plugin-code-copy": "^1.0.6"
+  }
 }
