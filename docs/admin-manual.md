@@ -851,6 +851,8 @@ In csv some fields are mandatory as shown below
 - It will upload images into respected servers.
 - It will automatically choose img from images.
 
+>Note - while uploading image,  restricted platfrom  url not allowed, like google dive and dropbox
+
 26. condition → condition can be new, old or refurnished.
 27. gtin → Global Trade Item Number (GTIN) is a unique and internationally recognized identifier for a product.
 28. stock → In case of inventory updation you can provide stock in numbers.

@@ -271,6 +271,8 @@ Products are the physical goods, digital files, and services that you sell. To c
   - Click on `Add Image/Youtube Link` at top right corner of the box and a small window pop up came, and here you can provide youtube link and click on submit.
   - Video will be added to your product
 
+> Note - while uploading image, restricted platfrom url not allowed, like google dive and dropbox
+
 ![Image](./anne/product-edit0.png)
 
 ##### Name and description

@@ -76,6 +76,8 @@ Unit used for better navigation in product for customer.
 
 In this section, you will sync images with the server, sync auto complete, and sync with es etc.
 
+> Note - while uploading image, restricted platfrom url not allowed, like google dive and dropbox
+
 - In sidebar , go to Settings → Sync.
 
 ![Image](./anne/sync.png)
