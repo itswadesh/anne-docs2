@@ -873,13 +873,15 @@ In csv some fields are mandatory as shown below
 
 23. return_info → return_info is text value of return policy.
 24. `country_of_origin` → It is the country of origin of the product.
-25. img and images →
+25. `featured image` and images →
 
 - Images is comma(,) separated list images.
 - It will upload images into respected servers.
-- It will automatically choose img from images.
+- It will automatically choose the 1st image insdie images as `featured image` (img).
+- When `featured image` provided and images not provided, it will pick img and push to images array.
+- When `featured image` and `images` both are provided, where as `featured image` does not contain inside images array, it will ignore `featured image`
 
->Note - while uploading image,  restricted platfrom  url not allowed, like google dive and dropbox
+> Note - while uploading image, restricted platfrom url not allowed, like google dive and dropbox
 
 26. condition → condition can be new, old or refurnished.
 27. gtin → Global Trade Item Number (GTIN) is a unique and internationally recognized identifier for a product.
