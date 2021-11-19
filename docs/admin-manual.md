@@ -503,6 +503,8 @@ Follow the azure Docs to obtain your own connection string, account name, access
 - AZURE_STORAGE_ACCOUNT_ACCESS_KEY
 - AZURE_STORAGE_CDN_URL
 
+> Note: While creating image folder names in storage providers, please use - in place of space, and lowercase in the name.
+
 ### Invoices
 
 The system has a built-in PDF library to generate beautiful invoices for purchases made on the platform. Customers can download the order invoices from their order detail page. You can configure your preferences for invoices like the Title, paper size, and color, etc.
