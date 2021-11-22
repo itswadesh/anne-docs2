@@ -279,6 +279,8 @@ Catalog is combined of products and reviews. With the help of this modules, vend
 
 Products are the physical goods, digital files, and services that you sell. To create a product, you need to specify the name and upload product images. In addition, you can add product details that help your clients better understand the product. For example add available sizes, SKU, description, etc. You don't have to provide every detail for each product.
 
+Physical item has weight and needs shipping or customer pickup. Digital item is delivered digitally or provided as a service.
+
 - In sidebar, go to Products → All Products.
 - You can view and edit product details from here.
 

@@ -7,7 +7,7 @@ date: 2021-09-08 09:40:12
 
 ## Getting started
 
-Anne is a E-Commerce platform that allows anyone to set up an online store and sell their products. Administrator will have enormous number of features from where he/she can control the flow of the anne.
+Anne is an E-Commerce platform that allows anyone to set up an online store and sell their products. The administrator will have an enormous number of features from where he/she can control the flow of the Anne.
 
 This guide will help you through the basic steps to open your Anne store and start selling within a day. Once you sign up and set up your store, you don't have to do anything else — your store is up and running. Meaning it's open, and customers can check your storefront and make orders.
 
@@ -15,11 +15,11 @@ Okay, let’s get started!
 
 ### SignUp
 
-- You can sign up to Anne Platform on your browser. All you need is an valid email address, and You can set up account.
-- If you are not registered to website then you can create a new account using sign up.
-- After filling all details, click on `sign up` button, after this server will check the provided info is valid or not, if it is valid then it will create your account or if it detects that the info is invalid then you have to fill the details carefully.
-- Email must be unique, not registerd with us already.
-- You can fill details as in image below
+- You can sign up to Anne Platform on your browser. All you need is a valid email address, and You can set up an account.
+- If you are not registered to the website then you can create a new account using sign up.
+- After filling in all details, click on `sign-up button, after this server will check the provided info is valid or not, if it is valid then it will create your account, or if it detects that the info is invalid then you have to fill the details carefully.
+- Email must be unique, not registered with us already.
+- You can fill in details as in the image below
 
 ![Image](./anne/sign-up.png)
 
@@ -31,7 +31,7 @@ Okay, let’s get started!
 
 - Go to the Anne admin panel login page.
 - If you signed up with an email address and password, enter them and click `Sign In`.
-- password should be case sensitive.
+- password should be case-sensitive.
   ![Image](./anne/login.png)
 
 **To log out**
@@ -41,7 +41,7 @@ Okay, let’s get started!
 
 ### Admin for existing store
 
-- If you want to become admin for existing store, Then you need to first register as vendor and super admin will assign you a store and update your role in store.
+- If you want to become an admin for an existing store, Then you need to first register as a vendor and the super admin will assign you a store and update your role in the store.
 
 ### Resetting Password
 
@@ -51,19 +51,19 @@ Okay, let’s get started!
 
 - Go to [https://admin.anne.biz/](https://admin.anne.biz/)
 - Click on `Forgot password`
-- Enter email address which is associated with your Anne account and click `Send email`.
+- Enter the email address which is associated with your Anne account and click `Send email`.
 
   ![Image](./anne/forget-pwd1.png)
 
-- An email with a link will sent you for reset your password. In the email, click on reset password link.
+- An email with a link will be sent to you for resetting your password. In the email, click on the reset password link.
 - Create a new password for your account and click `Reset password`
-- Now You will be able logged in to your Anne account with your new password.
+- Now You will be able to log in to your Anne account with your new password.
 
   ![Image](./anne/reset-pwd.png)
 
 <!-- ### Store Set Up
 
-- After Successfull signup, it will redirect to Store set up page , it will ask for the store configuration.
+- After Successful signup, it will redirect to Store set up page, it will ask for the store configuration.
 
 ![Image](./anne/store-set-up.png)
 
