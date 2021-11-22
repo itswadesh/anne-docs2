@@ -7,39 +7,104 @@ date: 2021-09-08 09:40:12
 
 ## Getting started
 
-To sell your products on anne, you have to register as a vendor. You have to visit the vendor page to register as a vendor.
+To sell your products on anne, you have to register as a vendor. You have to visit the Become a vendor link to register as a vendor.
 
 Vendor(seller) can control their store by the easy to handle dashboard. Vendor has the ability to manage sales,products,orders,payments,customers,import and export,monitoring etc. vendor can also see the analysis reports of the performance of the store.
 
+### SignUp
+
+- You can sign up to Anne Platform on your browser. All you need is an valid email address, and You can set up account.
+- If you are not registered to website then you can create a new account using sign up.
+- After filling all details, click on `sign up` button, after this server will check the provided info is valid or not, if it is valid then it will create your account or if it detects that the info is invalid then you have to fill the details carefully.
+- Email must be unique, not registerd with us already.
+- You can fill details as in image below
+
+![Image](./anne/sign-up.png)
+
+**Vendor Set up**
+
+After vendor registration, it will redirect to set up page, where vendor have to fill details about business, like- address. Super admin will allot a store to vendor. And vendor will able to access that store.
+
+![Image](./anne/vendor-set-up.png)
+
+### Sign In And Sign Out
+
+- You can log in to Anne on your browser.
+
+**To log in**
+
+- Go to the Anne admin panel login page.
+- If you signed up with an email address and password, enter them and click `Sign In`.
+- password should be case sensitive.
+  ![Image](./anne/login.png)
+
+**To log out**
+
+- Go to your Anne admin panel at [https://admin.anne.biz/](https://admin.anne.biz/)
+- Click on your left sidebar bottom at logout.
+
 ### Dashboard/Reports
 
-You can visit the dashboard page only After successfully loggedIn, Menu page will be listed in the left corner of the page & the 1st option that will be opened is Dashboard.
+When super admin assign store to vendor, vendor will receive a confirmation email. And Vendor can visit the dashboard page only After successfully loggedIn, Menu page will be listed in the left corner of the page & the 1st option that will be opened is Dashboard.
 
-In the Dashboard there are different reports that we can see such like
+In the Dashboard there are different reports that vendor can see such like
 
-- Total Orders→ Total how many orders have been placed for vendor’s products will be shown here as a count.
-- Total users→ Total how many users in store will be shown here as a count.
-- Total products→ Total how many products in store will be shown here as a count.
-- Total payments→ Total how many payments done in store will be shown here as a count.
-- Earning→ It will show the total amount of orders placed in a month.
-- Latest Orders→ This block will show the latest five orders placed on the store for the vendor’s products. Latest orders will have a different background color on the basis of the order status.
-- Transactions→ This block will show the latest five payments on the store for the vendor’s products.
+**Statistics**
+
+- Total Orders → Total how many orders have been placed from vendor products will be shown here as a count.
+- Total customers → Total how many users ordered vendor products will be shown here as a count.
+  > A user can count only one time, however he/she placed multiple orders.
+- Total products → Total how many products owned by vendor will be shown here as a count.
+- Total payments → Total how many payments done in vendor products will be shown here as a count.
+
+**Earning** → It will show the total amount of orders placed in a month of vendor products.
+
+**Latest Orders** → This box will show the latest five orders placed on the store from vendor products. Latest orders will have a different background color on the basis of the order status.
+
+**Instructional Videos** → This box have video list, how things work in panel.
+
+**5 Top Vendors** → This box have list of top selling vendors on store. On top highest selling amount vendor and at bottom lowest selling amount vendor.
+
+**Transactions** → This box will show the latest five payments on the store from vendor orders.
 
 ![Image](./anne/dashboard.png)
 
 ### SideBar
 
-- Anne sidebar is a useful component of website navigation design. You can see all the service in one place through the anne sidebar, you can manage as per need.
+- Anne sidebar is a useful component of website navigation design. The vendor can see all the services in one place through the Anne sidebar, also can manage as per need.
 
 ![Image](./anne/side-bar.png)
 
 ### Profile
 
 - In sidebar, go to My Profile → profile.
-- Here you can update your profile information.
-- You can also close your account from here.
+- Here vendor can update profile information.
 
-![Image](./anne/update-profile.png)
+![Image](./anne/update-profile1.png)
+
+- Vendor can add its own address, This address will use for pick up locations.
+
+![Image](./anne/update-profile2.png)
+
+- Vendor can add bank account details.
+
+![Image](./anne/update-profile3.png)
+
+> Please make sure details are correct, because these details will use in case of payment withdraw.
+
+- Vendor can set up seprate banner for itself.
+
+![Image](./anne/update-profile4.png)
+
+- Vendor can also close account from here.
+
+![Image](./anne/update-profile5.png)
+
+### Change Password
+
+Vendor can change login password via entering current password and new password. And after successfull change vendor will receive a confirmation email.
+
+![Image](./anne/change-password.png)
 
 ## My Sales
 
@@ -49,7 +114,7 @@ In the Dashboard there are different reports that we can see such like
 
 - Orders can be found in the left sidebar on “mysales → Orders” link.
 
-- By default, your orders list is organized from relevance. If you have a large number of orders, then you can use the search bar above the order list to find an order by customer detail, order id.
+- By default, the orders list is organized from relevance. If there is a large number of orders, then you can use the search bar above the order list to find an order by customer detail, order id.
 
 - You can also filter your orders by
 
@@ -88,13 +153,19 @@ In Order list when click on any order right at arrow sign.
 - Customer-> Name and address of the customer will show up in this block.
 - Payment Details-> The payment method selected to place the order.
 
-#### Create Order
+**Sync Shipping**
+
+- At bottom of the left side, a syncShipping button is available, If an order not sync with the shipping provider for any reason, then you can do it via clicking on this. It will not create make duplicate order.
+
+![Image](./anne/order-update1.png)
+
+<!-- #### Create Order
 
 Sometimes you may need to create an order from the admin panel. Yes, you can do it! The system has an easy to use interface with all needed features to create an order.
 
 Go to orders and then click over the CREATE ORDER. Next screen finds the customer you want to create the order for. Type the name/email/nice name, the result will show up soon. Select the customer and click PROCEED button to populate the order form. In same way you have to select the products, you can select multiple products.
 
-The order creation screen is self-descriptive. You can save the order to proceed later by choosing SAVE AND BACK or you can choose PLACE THE ORDER to process the order right way.
+The order creation screen is self-descriptive. You can save the order to proceed later by choosing SAVE AND BACK or you can choose PLACE THE ORDER to process the order right way. -->
 
 ### Abandoned Carts
 
@@ -165,39 +236,17 @@ The order creation screen is self-descriptive. You can save the order to proceed
 
 ![Image](./anne/excel-and-search.png)
 
-<!-- ## Manage Vendors
-
-A vendor can register on the merchant landing page and you don’t have to do anything at all. Sometime you may want to add a vendor from the back office and you can do that! To create a new vendor, you just have to provide some basic information and the system will send an email with instructions to the vendor to complete the registration process. Of course, you have full control to manage vendors from your admin panel.
-
-You can offer a trial period with your subscription plans and also can set if a vendor needs to add a card on the time of registration. Read this article to manage subscription plans.
-
-### Vendor Approval
-
-If you set the VENDOR NEEDS APPROVALS on at SETTINGS CONFIGURATION section, then every vendor will require manual approval from admin/platform to get live.
-
-The sysmol means the vendor is active and the sysmol means need approval. You can click over the symbol to activate or deactivate the vendor. Also you can use the symbol on the option panel to do the exact same.
-
-### Vendor Verification
-
-This is one of the most requested features from the customers. This feature will help your marketplace to prevent fraud and gain trust from buyers. A shiny verified badge will be displayed on the side of vendor name on the marketplace, so the customers will know which vendors are verified.
-
-Vendors can upload the required documents from the profile page and admin will see the request on the dashboard.
-
-When a vendor uploads documents to verify you’ll see the PENDING VERIFICATIONS box with the number of requests.
-
-Click over the symbol to download the document and do manual inspection. After you’re satisfied with the submitted documents you need to click over the VERIFY button to complete the action. After you’ve done you can also delete the file using the button to keep your system clean. -->
-
 ## Customers
 
 #### User List
 
-- In the customer section you can see the list of all users who registered on your store.
+- In the customers, section vendor can see the list of all users who bought items from vendor products.
 
-- Through this you can easily contact users by the phone number and other details like their mail id and the designation that they are bearing here.
+- Through this vendor can easily contact users by the phone number and other details like their mail id and the designation that they are bearing here.
 
-- You can export the users list in csv format via click on sheet logo.
-- You can see photo of every user that is active and are performing any role in the website.
-- You can verified and active the user from here.
+- Vendor can export the users list in csv format via click on sheet logo.
+- Vendor can see photo of every user that is active and are performing any role in the website.
+- Vendor verified and active the user from here.
 
 ![Image](./anne/customer-list.png)
 
@@ -214,39 +263,19 @@ Click over the symbol to download the document and do manual inspection. After y
 
 **To export customers**
 
-- You can export the whole of your customer list.
+- Vendor can export the whole customer list.
 
 **To export specific customer list**
 
 - In sidebar, go to Customers page.
 - Click on the Excel logo.
-- As a result, a CSV file will be downloaded to your computer.
-
-#### Edit Customers
-
-You can change an existing customer profile to update their information.
-
-**To edit a customer’s information**
-
-- In sidebar, go to Customers.
-- Click the pencil icon of the customer profile you want to edit.
-- In the Edit customer dialog, you can change a customer’s
-
-  - firstName and lastName
-  - email address
-  - Shipping Charges(in role vendor)
-  - Free Shipping On(in role vendor)
-  - Role
-  - active and verified
-    Click Save to confirm your changes
-
-![Image](./anne/customer-edit.png)
+- As a result, a CSV file will be downloaded to vendor computer.
 
 ## Catalog
 
-The catalog is combined of product, category, product attribute and manufacturer modules. With the help of this modules, you will be able to manage your marketplace product catalog effortlessly. All the functionalities you need is there.
+Catalog is combined of products and reviews. With the help of this modules, vendor will be able to manage marketplace product effortlessly. All the functionalities vendor need is there.
 
-### Products
+### All Products
 
 Products are the physical goods, digital files, and services that you sell. To create a product, you need to specify the name and upload product images. In addition, you can add product details that help your clients better understand the product. For example add available sizes, SKU, description, etc. You don't have to provide every detail for each product.
 
@@ -310,6 +339,8 @@ In color section you can choose any color from board.
 This section has some mini sections as follows
 
 ![Image](./anne/product-edit2.png)
+
+##### Additional Details
 
 - In this section you can add fields
   Gender-> The gender of the product.
@@ -506,3 +537,31 @@ Review is the nothing but a comment box in which customers give their reviews ab
 - You will see product like these
 
 ![Image](./anne/monitoring.png)
+
+## Live Streaming
+
+Live Streaming is a feature which allow vendor to live communcate with customers, So customer can better understand products.
+
+### Go Live
+
+- In sidebar, go to Live Streaming → Go Live.
+
+  ![Image](./anne/live-stream1.png)
+
+- Vendor can see list of channels. Vendor can edit details and also can go live from here.
+
+  ![Image](./anne/live-stream2.png)
+
+### Demo Requests
+
+- In sidebar, go to Live Streaming → Demo Requests.
+- Vendor can see list of demo requests which was created via customers.
+- Vendor also join calls and also go live through here.
+
+![Image](./anne/live-stream3.png)
+
+### Stored Videos
+
+- In sidebar, go to Live Streaming → Stored Videos.
+- Vendor can see the list of stored videos.
+- Vendor can watch videos and also delete videos.

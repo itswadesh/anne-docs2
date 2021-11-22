@@ -39,6 +39,10 @@ Okay, let’s get started!
 - Go to your Anne admin panel at [https://admin.anne.biz/](https://admin.anne.biz/)
 - Click on your left sidebar bottom at logout.
 
+### Admin for existing store
+
+- If you want to become admin for existing store, Then you need to first register as vendor and super admin will assign you a store and update your role in store.
+
 ### Resetting Password
 
 - You can reset your login password any time if you forget it, or if you want to keep your account more secure.
@@ -123,25 +127,19 @@ This is the time to configure your brand information and platform details. In th
 
 ![Image](./anne/store-profile1.png)
 
-##### Store Currency
-
-- You can add currency name and currency symbol.
-
-![Image](./anne/store-profile2.png)
-
 ##### Company Name and Email
 
 - The official name of your business. If you don't have a registered business yet, specify your store name as the company name.
 - You can also add email of the company.
 
-![Image](./anne/store-profile4.png)
+![Image](./anne/store-profile2.png)
 
 ##### Company Address
 
 - You can fill your company address here with phone number.
 - You can also search your store location in search address field.
 
-![Image](./anne/store-profile5.png)
+![Image](./anne/store-profile3.png)
 
 ##### Social Media Accounts
 
@@ -155,21 +153,19 @@ You can provide your social media url of your store, so customer can easily visi
 - Pinterest
 - Google
 
-![Image](./anne/store-profile6.png)
+![Image](./anne/store-profile4.png)
+
+##### Pin codes serve and Food item
+
+Here admin can enable or disable serving only to specific pin codes. Vendor can also enable food type product.
+
+![Image](./anne/store-profile5.png)
 
 ##### Storefront is Open
 
 In case you want to store status from open to close with a note, you can use this feature.
 
-![Image](./anne/store-profile7.png)
-
-##### Custom Domain
-
-- A domain is a unique address of your website on the Internet. People use the domain to locate and visit your site. Besides, it defines your brand and produces an instant, but lasting impression. It also affects your site position in the search engine results as the right keywords in your domain name improve your SEO ranking.
-
-- If you already own a domain name, go ahead and connect the domain to your Anne Instant Site. In case you don't have one yet, you can buy a domain from any third-party company that sells domain names.
-
-![Image](./anne/store-profile8.png)
+![Image](./anne/store-profile6.png)
 
 ##### Store Description
 
@@ -181,7 +177,26 @@ In case you want to store status from open to close with a note, you can use thi
 
   - Avoid long sentences and complex vocabulary.
 
-![Image](./anne/store-profile9.png)
+![Image](./anne/store-profile7.png)
+
+#### Regional Settings
+
+Store Regional setting responsible for store country, currency, weight and size.
+When customer visit storefront, they will data in this format. These content will also use at order place time and shiping time.
+
+![Image](./anne/store-regional.png)
+
+#### Tracking and Analytics
+
+In this section admin can enable or diable banner for gdpr cookie consent.
+
+![Image](./anne/store-gdpr.png)
+
+##### Custom Domain
+
+- A domain is a unique address of your website on the Internet. People use the domain to locate and visit your site. Besides, it defines your brand and produces an instant, but lasting impression. It also affects your site position in the search engine results as the right keywords in your domain name improve your SEO ranking.
+
+- If you already own a domain name, go ahead and connect the domain to your Anne Instant Site. In case you don't have one yet, you can buy a domain from any third-party company that sells domain names.
 
 #### Store SEO
 
@@ -217,6 +232,21 @@ You can upload images of the store , logo of your store and youtube video and mo
 In This section store owner can fill account details, so order amount reflect in that account.
 
 ![Image](./anne/store-bussiness-detail.png)
+
+### Store Email Template
+
+An email template is an HTML file composed of reusable code modules, making it as easy as copying and pasting your copy, links, and image URLs to create an email.
+
+There are two email templates can be access via admin
+
+1.  Order Updated
+2.  Order Created
+
+![Image](./anne/email-templates1.png)
+
+Only store admin can edit these order templates. And also able to enable and disable.
+
+![Image](./anne/email-templates2.png)
 
 ### Store Payment
 
@@ -379,6 +409,12 @@ Now your marketplace can use Stripe APIs to manage payments. But still, we’re 
 :::
 
 Now from your platform’s admin Dashboard navigate to SETTINGS CONFIGURATION PAYMENT METHOD tab and enable Stripe payment method so that your marketplace vendors can accept credit card payment.
+
+#### PayPal
+
+PayPal is an online payment system that makes paying for things online and sending and receiving money safe and secure.
+
+PayPal is now the fifth most accepted payment option after Visa, Mastercard, American Express and Discover and is available at millions of stores online.
 
 ## Optional Configurations
 
@@ -612,7 +648,7 @@ SETTINGS → CONFIGURATION → REPORTS
 
 ## Appearance
 
-This article will help you to change the storefront theme as well as merchant landing themes. You can create banners, sliders and manage theme with easy to understand interface.
+This article will help admin to change the storefront theme as well as merchant landing themes. Admin can create banners, sliders and manage theme with easy to understand interface.
 
 ### Banners
 
@@ -620,47 +656,17 @@ Banners are used to make your store attractive to the customers.These banners co
 
 **Anne store have four types of banners as follows**
 
-- Slider→ This section controls the main page slider.
+- Slider For Desktop→ This section controls the main page slider of desktop.
+- Slider For Mobile→ This section controls the main page slider of mobile.
 - Hero→ This banner used for page medium content.
 - Picked→ This banner will comes in smallest and can use for brands.
 - Video→ This banner contain video.
 
-**Create Banner**
+![Image](./anne/banner-home-page.png)
 
-- Click on plus icon for create new banner.
-- Choose image and fill detail.
-- Banner type will decide the banner look and position.
-- Banner link will redict user to page on that link.
+Admin can add new banner, edit existing banner in respected banner types. Admin can also remove banners.
 
 ![Image](./anne/banner.png)
-
-**Banners List**
-
-- You can edit,clone and delete banner from here.
-
-![Image](./anne/banners.png)
-
-**Banner Export**
-
-You can export all yours banners in the csv format by going to the manage banners page where the banners grid is displayed. On the right corner of the grid there is an excel logo from where the you can export the csv which will have grid columns.
-
-![Image](./anne/excel-and-search.png)
-
-## User Management
-
-There are two types of users on the system, platform users who manage the marketplace and merchant users belong to a vendor to manage their store. All users get access to different modules based on the permission given by their role they belong. Only the super admin has full control over the system and the merchant has full access on his/her store. Also, merchant type users can get access to some platform modules permitted by the platform.
-
-> Info! You can not access or modify users who have more privilege than you. You can only create users with less privilege than yourself.
-
-### User Roles
-
-A user must have a role to get access to this system. You can create a user role that belongs to the platform or merchant. Platform type roles can be permitted to access platform modules and common modules like category module and tax module. Vendor admin can create users using merchant type roles to manage their store. You can also allow vendors to create their own user roles with own permission set.
-
-### Create Users
-
-You can add an unlimited number of users. A user created on the platform admin panel can be assigned to a platform type role. The store owner can add staffs from merchant admin panel to manage their store.
-
-> TIPS: To assist vendors to add staff to their store, platform users can login to vendor account if permitted.
 
 ## Catalog
 
@@ -984,6 +990,31 @@ If you’ve proper permission, you can either approve or decline the refund requ
 ## Utilities
 
 Utility is an important characteristic of business is the creation of utilities is goods so that consumers may use them.
+
+### Pages
+
+- A page is used for Search engine optimization, which is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.
+- In sidebar, go to Utilities → Pages.
+- You will see the list of pages here.
+
+![Image](./anne/pages.png)
+
+**Create/Edit Page**
+
+- For create page click on add icon at the bottom of right side, and it will redirect to page edit page.
+- Now you can able to create page.
+- For edit page click on pencil icon of page on the listing page and you will redirect to page edit page.
+- After update details click on save icon.
+
+![Image](./anne/page.png)
+
+**Page Export**
+
+- You can export all yours pages in the csv format.
+- Click on top right corner at excel logo of the listing page.
+- And a csv formatted file will download in your system, which will have data in grid columns.
+
+![Image](./anne/excel-and-search.png)
 
 ### Blogs
 
