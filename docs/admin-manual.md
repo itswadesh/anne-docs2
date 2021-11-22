@@ -69,27 +69,27 @@ Okay, let’s get started!
 
 ![Image](./anne/store-set-up1.png)
 
-The fields shown above have to be filled by you to open up a new shop and after store set up you will be able to access the store feature. -->
+The fields shown above have to be filled by you to open up a new shop and after store set up, you will be able to access the store feature. -->
 
 ## Configurations
 
-Before your platform goes live you need to configure the platform to set everything right and make it usable with no issues. In this section, you will set branding, configure Payment Provider, Email Service, Search Service provider, Newsletter, google analytic, Social Media login, etc. To do some configuration you may have to modify few config files in the system. Check this guide to know how to modify the .env environment file.
+Before your platform goes live you need to configure the platform to set everything right and make it usable with no issues. In this section, you will set branding, configure Payment Provider, Email Service, Search Service provider, Newsletter, google analytic, Social Media login, etc. To do some configuration you may have to modify a few config files in the system. Check this guide to know how to modify the .env environment file.
 
-- In sidebar , go to Settings → Store Settings.
+- In the sidebar, go to Settings → Store Settings.
 
 ### Email Configuration
 
-By default, the system is set up to log all mails into files. You have to configure this settings to send emails. You may use any of this supported services→ sendmail, mailgun, mandrill and sparkpost. To configure email, open the .env file and update these keys with your values.
+By default, the system is set up to log all emails into files. You have to configure this setting to send emails. You may use any of these supported services→ sendmail, mailgun, mandrill, and sparkpost. To configure email, open the .env file and update these keys with your values.
 
 ::: warning
 
-> The system will generate errors if the mail fails. So double check the email configuration. Talk to your email/hosting service provider if you’re not sure what to do.
+> The system will generate errors if the mail fails. So double-check the email configuration. Talk to your email/hosting service provider if you’re not sure what to do.
 
 :::
 
 #### Testing Emails
 
-If you don’t have a mail server or just testing the application you can fake the actual sending of emails. zCart has a log driver and the Mailtrap driver for this job.
+If you don’t have a mail server or just testing the application you can fake the actual sending of emails. Anne has a log driver and the Mailtrap driver for this job.
 
 **Log Driver**
 
@@ -97,7 +97,7 @@ Instead of sending your emails, the log mail driver will write all email message
 
 **Mailtrap**
 
-Finally, you may use a service like Mailtrap and the smtp driver to send your email messages to a “dummy” mailbox where you may view them in a true email client. This approach has the benefit of allowing you to actually inspect the final emails in Mailtrap’s message viewer.
+Finally, you may use a service like Mailtrap and the SMTP driver to send your email messages to a “dummy” mailbox where you may view them in a true email client. This approach has the benefit of allowing you to inspect the final emails in Mailtrap’s message viewer.
 
 - MAIL_DRIVER=log
 - MAIL_HOST=smtp.example.com
@@ -110,7 +110,7 @@ Finally, you may use a service like Mailtrap and the smtp driver to send your em
 - MAIL_REPLY_TO_ADDRESS=reply@example.com
 - MAIL_REPLY_TO_NAME=Reply
 
-The MAIL_FROM_ADDRESS and MAIL_FROM_NAME will be used to sent email by your marketplace where no specific sender information available to use.
+The MAIL_FROM_ADDRESS and MAIL_FROM_NAME will be used to send an email by your marketplace where no specific sender information is available to use.
 
 ### Store Settings/System Settings
 
@@ -118,7 +118,7 @@ This is the time to configure your brand information and platform details. In th
 
 #### Store Profile
 
-- In Store Settings, you will redirect to store profile.
+- In-Store Settings, you will redirect to the store profile.
 
 ##### Store Name and Web Address
 
@@ -130,20 +130,20 @@ This is the time to configure your brand information and platform details. In th
 ##### Company Name and Email
 
 - The official name of your business. If you don't have a registered business yet, specify your store name as the company name.
-- You can also add email of the company.
+- You can also add the email of the company.
 
 ![Image](./anne/store-profile2.png)
 
 ##### Company Address
 
-- You can fill your company address here with phone number.
-- You can also search your store location in search address field.
+- You can fill in your company address here with your phone number.
+- You can also search your store location in the search address field.
 
 ![Image](./anne/store-profile3.png)
 
 ##### Social Media Accounts
 
-You can provide your social media url of your store, so customer can easily visit your store and its products.You can link account as follows
+You can provide the social media URL of your store, so a customer can easily visit your store and its products. You can link the account as follows
 
 - Facebook
 - Instagram
@@ -157,7 +157,7 @@ You can provide your social media url of your store, so customer can easily visi
 
 ##### Pin codes serve and Food item
 
-Here admin can enable or disable serving only to specific pin codes. Vendor can also enable food type product.
+Here admin can enable or disable serving only to specific pin codes. The vendor can also enable food-type products.
 
 ![Image](./anne/store-profile5.png)
 
@@ -169,9 +169,9 @@ In case you want to store status from open to close with a note, you can use thi
 
 ##### Store Description
 
-- Information about your store. You may also use videos, images, and animated elements that help to describe your store. Write unique description for rank higher in search engines.
+- Information about your store. You may also use videos, images, and animated elements that help to describe your store. Write unique descriptions for rank higher in search engines.
 
-- Store description section has the editor, so you can easily add text (and change color, size, and font), bullet points, paragraphs, links, or additional images and videos.
+- Store description section has an editor, so you can easily add text (and change color, size, and font), bullet points, paragraphs, links, or additional images and videos.
 
 - Tips to improve your store descriptions
 
@@ -181,14 +181,14 @@ In case you want to store status from open to close with a note, you can use thi
 
 #### Regional Settings
 
-Store Regional setting responsible for store country, currency, weight and size.
-When customer visit storefront, they will data in this format. These content will also use at order place time and shiping time.
+Store Regional setting responsible for store country, currency, weight, and size.
+When customers visit the storefront, they will see content according to settings. These settings will also use at order placement time and shipping time.
 
 ![Image](./anne/store-regional.png)
 
 #### Tracking and Analytics
 
-In this section admin can enable or diable banner for gdpr cookie consent.
+In this section, the admin can enable or disable the banner for gdpr cookie consent.
 
 ![Image](./anne/store-gdpr.png)
 
@@ -204,19 +204,19 @@ SEO (or Search engine optimization) is the process of improving your site's rank
 
 ##### Preview
 
-- You can preview store through this link.
+- You can preview the store through this link.
 
 ![Image](./anne/store-seo1.png)
 
 ##### Company SEO Attributes
 
-- You can add company SEO attributes like- tile ,metadescription etc.
+- You can add company SEO attributes like- title, meta description, etc.
 
 ![Image](./anne/store-seo2.png)
 
 #### Store Images
 
-You can upload images of the store , logo of your store and youtube video and more.
+You can upload images of the store, the logo of your store and youtube videos, and more.
 
 ![Image](./anne/store-images.png)
 
@@ -229,7 +229,7 @@ You can upload images of the store , logo of your store and youtube video and mo
 
 #### Store Bank Account
 
-In This section store owner can fill account details, so order amount reflect in that account.
+In This section store owner can fill account details, so the order amount reflects in that account.
 
 ![Image](./anne/store-bussiness-detail.png)
 
@@ -237,7 +237,7 @@ In This section store owner can fill account details, so order amount reflect in
 
 An email template is an HTML file composed of reusable code modules, making it as easy as copying and pasting your copy, links, and image URLs to create an email.
 
-There are two email templates can be access via admin
+Two email templates can be accessed via admin
 
 1.  Order Updated
 2.  Order Created
@@ -250,28 +250,28 @@ Only store admin can edit these order templates. And also able to enable and dis
 
 ### Store Payment
 
-This section allows you to control payment on store. By configuring payment you can perform the common task of processing payments on seller's behalf.
+This section allows you to control payment in the store. By configuring payment you can perform the common task of processing payments on the seller's behalf.
 
-- In sidebar, go to Settings → Payment.
-- You can choose payment gateway's from here.
+- In the sidebar, go to Settings → Payment.
+- You can choose a payment gateway's from here.
 
 ![Image](./anne/store-payment1.png)
 
 #### Cashfree
 
-You can easily collect payments from your customers using cashfree. Cashfree Payment Gateway accepts domestic and international payments. You can easily collect payments using popular Payment Methods like Cards, UPI, Netbanking, Wallets, PayPal, EMI, and Pay Later options.
+You can easily collect payments from your customers using Cashfree. Cashfree Payment Gateway accepts domestic and international payments. You can easily collect payments using popular Payment Methods like Cards, UPI, Netbanking, Wallets, PayPal, EMI, and Pay Later options.
 
 ##### Create Account
 
 To get started with Cashfree you must first create an account. To create an account,
 
-1.Go to the Cashfree website and click Create Account.
-2.Enter your Work Email Address and enter a password for your Cashfree account in the Create Password field. You will need this password to login later.
-3.Accept the terms and conditions and click Next.
-4.Enter your company details, i.e, your company Contact Number, Website URL/Application Link, and your Monthly Transaction Volume (INR). Click Next.
-5.Select one or more solutions that you looking for.
-6.Click Complete Signup. You will receive a verification email. Click the link in the email to verify your email address.
-7.Sign in to your Cashfree account using the credentials.
+1. Go to the Cashfree website and click Create Account.
+2. Enter your Work Email Address and enter a password for your Cashfree account in the Create Password field. You will need this password to log in later.
+3. Accept the terms and conditions and click Next.
+4. Enter your company details, i.e, your company Contact Number, Website URL/Application Link, and your Monthly Transaction Volume (INR). Click Next.
+5. Select one or more solutions that you looking for.
+6. Click Complete Signup. You will receive a verification email. Click the link in the email to verify your email address.
+7. Sign in to your Cashfree account using the credentials.
 
 ##### Merchant Home Page
 
@@ -313,7 +313,7 @@ The KYC information required differs based on the business type selected.
 
 ##### My Account
 
-My Account section gives you control of overall activities around your account. You can control some of the basic account settings, two-factor authentication, security preferences, configure email notifications, manage users/aliases to provide access to the dashboard and monitor login history.
+My Account section gives you control of overall activities around your account. You can control some of the basic account settings, two-factor authentication, security preferences, configure email notifications, manage users/aliases to provide access to the dashboard, and monitor login history.
 
 To add a new alias
 
@@ -332,18 +332,18 @@ To add a new alias
 
 #### Stripe Connect API
 
-Stripe Connect enables you to control credit card payment on behalf of merchant’s connected accounts. By configuring Stripe Connect API you can perform the common task of processing payments on a seller’s behalf. You’ll need CLIENT ID, SECRET KEY, PUBLISHABLE KEY and WEBHOOK SECRET from Stripe.
+Stripe Connect enables you to control credit card payments on behalf of merchants’ connected accounts. By configuring Stripe Connect API you can perform the common task of processing payments on a seller’s behalf. You’ll need CLIENT ID, SECRET KEY, PUBLISHABLE KEY, and WEBHOOK SECRET from Stripe.
 
-> INFO Once the Stripe connect is configured. The same APIs can be used for vendor subscription billing, no extra configuration needed.
+> INFO Once the Stripe connect is configured. The same APIs can be used for vendor subscription billing, no extra configuration is needed.
 
 ##### Register Your Platform
 
-Very first you have to register your marketpalce platform with Stripe. Login into your Stripe dashboard and go to the Connected accounts section. Click Get Started button to activate connect account.
+Very first you have to register your marketplace platform with Stripe. Login to your Stripe dashboard and go to the Connected accounts section. Click Get Started button to activate connect account.
 
 ![Image](./anne/stripe1.png)
 Stripe Dashboard
 
-On next window, select Build a platform or marketplace option and proceed.
+In the next window, select to Build a platform or marketplace option and proceed.
 
 ![Image](./anne/stripe2.png)
 Dashboard Stripe 2
@@ -354,29 +354,29 @@ Go to Settings from the sidebar and click Connect Settings.
 ![Image](./anne/stripe3.png)
 Stripe connect settings
 
-On the next screen Integration section get the client ID, we’ll need this ID later on this guide. Enable the OAuth settings based on your account type, If you’re confused then enable both. Now click Add URI button and give https://your_domain/admin/setting/stripe/redirect in the Redirect URI field.
+On the next screen Integration section get the client ID, we’ll need this ID later on in this guide. Enable the OAuth settings based on your account type, If you’re confused then enable both. Now click Add URI button and give https://your_domain/admin/setting/stripe/redirect in the Redirect URI field.
 
 ![Image](./anne/stripe4.png)
 Stripe connect settings
 
-On the same screen scroll to Branding section and fill the form with your brand information, upload logo, and icon.
+On the same screen scroll to the Branding section and fill the form with your brand information, upload logo, and icon.
 
 **Get API credentials**
 
-Next, go to Developers API keys section from the sidebar and get the Publishable key and Secret key.
+Next, go to the Developers API keys section from the sidebar and get the Publishable key and Secret key.
 
 ![Image](./anne/stripe5.png)
 
 **Handling Stripe Webhooks**
 
-One more thing is remaining to finish configuring the Stripe side. And that is webhooks. By setting webhooks we allowing Stripe to communicate with your platform when any changes happen on Stripe’s site like subscription update, cancel, payment failed, etc. so that your marketplace can take actions to manage the vendor account on your marketplace. zCart has everything configured for you, now you just have to set the URL and the secret key for secure communications.
+One more thing is remaining to finish configuring the Stripe side. And that is webhooks. By setting webhooks we allow Stripe to communicate with your platform when any changes happen on Stripe’s site like subscription update, cancel, payment failed, etc. so that your marketplace can take actions to manage the vendor account on your marketplace. zCart has everything configured for you, now you just have to set the URL and the secret key for secure communications.
 
-Go to Developers Webhooks section from the sidebar and click the Add endpoint button. On the next window enter https://your_domain/stripe/webhook in the Endpoint URI field and add below events on the Events to send section.
+Go to the Developers Webhooks section from the sidebar and click the Add endpoint button. On the next window enter https://your_domain/stripe/webhook in the Endpoint URI field and add the below events on the Events to send section.
 
 ![Image](./anne/stripe6.png)
 Stripe Webhooks Events
 
-Events need to enabled
+Events need to be enabled
 
 - customer.subscription.updated
 - customer.subscription.deleted
@@ -408,25 +408,25 @@ Now your marketplace can use Stripe APIs to manage payments. But still, we’re 
 
 :::
 
-Now from your platform’s admin Dashboard navigate to SETTINGS CONFIGURATION PAYMENT METHOD tab and enable Stripe payment method so that your marketplace vendors can accept credit card payment.
+Now from your platform’s admin Dashboard navigate to the SETTINGS CONFIGURATION PAYMENT METHOD tab and enable the Stripe payment method so that your marketplace vendors can accept credit card payment.
 
 #### PayPal
 
 PayPal is an online payment system that makes paying for things online and sending and receiving money safe and secure.
 
-PayPal is now the fifth most accepted payment option after Visa, Mastercard, American Express and Discover and is available at millions of stores online.
+PayPal is now the fifth most accepted payment option after Visa, Mastercard, American Express, and Discover and is available at millions of stores online.
 
 ## Optional Configurations
 
-This section will guide you to configure some optional modules. This is not mandatory configurations for your marketplace but to allow you to make it more personal. Like you can set what will be the color of order invoice generated from your marketplace.
+This section will guide you to configure some optional modules. This is not a mandatory configuration for your marketplace but allows you to make it more personal. Like you can set what will be the color of the order invoice generated from your marketplace.
 
 <!-- ### Full-text Search with Algolia/Configure Algolia Search
 
-The system has a built-in search functionality and pre-configured to enable full-text search. But if you’re a fan of Algolia, of course you can use your favorite search provider.
+The system has a built-in search functionality and is pre-configured to enable full-text search. But if you’re a fan of Algolia, of course, you can use your favorite search provider.
 
 Info! Algolia is a premium service and may cost you to use the service! Check the Algolia site for more info.
 
-To configure Algolia, you need your algolia APP ID and SECRET KEY from Algolia. Head to your Algolia dashboard and go to the API keys section. You’ll find the API keys there. Now open the .env file and update these keys with your values.
+To configure Algolia, you need your algolia APP ID and SECRET KEY from Algolia. Head to your Algolia dashboard and go to the API Keys section. You’ll find the API keys there. Now open the .env file and update these keys with your values.
 
 - SCOUT_DRIVER=algolia
 - ALGOLIA_APP_ID=YourApplicationID
@@ -460,11 +460,11 @@ The last part of this section is to turn on the Facebook App to use it. You can 
 
 #### Google+ Login
 
-Like Facebook, you need to have a project at Google Developer account to get API credentials. If you already configured Google Analytics then you can use the same project. If you need help how to create a project on Google check here and come back this point. Head over to Google API’s site and Select your project. This time finds and enables Google+ API on the API list.
+Like Facebook, you need to have a project at Google Developer account to get API credentials. If you already configured Google Analytics then you can use the same project. If you need help with how to create a project on Google check here and come back to this point. Head over to Google API’s site and Select your project. This time finds and enables Google+ API on the API list.
 
 ![Image](./anne/google1.png)
 
-Now go to the Credentials in the sidebar. Click OAuth consent screen tab and fill out the details there.
+Now go to the Credentials in the sidebar. Click the OAuth consent screen tab and fill out the details there.
 
 Now on the same screen go to the Credentials tab on the left. Click Create credentials and choose OAuth client ID from the dropdown list.
 
@@ -474,13 +474,13 @@ In the OAuth client ID screen, select the type of application, give origin and c
 
 ![Image](./anne/google3.png)
 
-Get the Client ID and Client Secret in the credentials page. Now open the .env file and update these keys with your values.
+Get the Client ID and Client Secret on the credentials page. Now open the .env file and update these keys with your values.
 
 - GOOGLE_CLIENT_ID=your_project_client_id
 - GOOGLE_CLIENT_SECRET=your_project_client_secret
 - GOOGLE_REDIRECT_URL=redirect_url
 
-Social login configuration is done. Now customers will be able to login using Facebook and Google accounts.
+Social login configuration is done. Now customers will be able to log in using Facebook and Google accounts.
 
 ### Image Management
 
@@ -512,17 +512,17 @@ We use Imagekit.io for image optimization, so that exact size images will be del
     - 1. S3
     - 2. Filesystem
 
-The filesystem is the disk space where the application store all the images and other static files. The system provides a powerful filesystem abstraction. The Filesystem integration provides simple to use drivers for working with local filesystems, Amazon S3 and Azure Cloud Storage. Even better, it’s amazingly simple to switch between these storage options.
+The filesystem is the disk space where the application store all the images and other static files. The system provides a powerful filesystem abstraction. The Filesystem integration provides simple to use drivers for working with local filesystems, Amazon S3, and Azure Cloud Storage. Even better, it’s amazingly simple to switch between these storage options.
 
 By default, the platform uses the local public disk. The public disk uses the local driver and stores these files in storage/app/public.
 
-> INFO: To make them accessible from the web, you should create a symbolic link from public/storage to storage/app/public. Most of the case the system will just work out of the box but few servers may cause problems creating the symbolic link.
+> INFO: To make them accessible from the web, you should create a symbolic link from public/storage to storage/app/public. In most cases, the system will just work out of the box but a few servers may cause problems creating the symbolic link.
 
-To change the default filesystem, open settings and in settings choose storage provider. You can Change the file storage from local to s3 and azure.
+To change the default filesystem, open settings, and in settings choose storage provider. You can change the file storage from local to s3 and azure.
 
 #### Amazon S3 Configuration
 
-To configure S3, get your own S3 configuration and credentials. Now open the .env file and update these keys with your values from Amazon S3. For convenience, these environment variables match the naming convention used by the AWS CLI.
+To configure S3, get your S3 configuration and credentials. Now open the .env file and update these keys with your values from Amazon S3. For convenience, these environment variables match the naming convention used by the AWS CLI.
 
 - S3_ACCESS_KEY
 - S3_SECRET
@@ -532,7 +532,7 @@ To configure S3, get your own S3 configuration and credentials. Now open the .en
 
 #### Microsoft Azure Storage
 
-Follow the azure Docs to obtain your own connection string, account name, access key, and cdn url. Then update these credential's with your values from microsoft.
+Follow the azure Docs to obtain your connection string, account name, access key, and CDN URL. Then update these credentials with your values from Microsoft.
 
 - AZURE_STORAGE_CONNECTION_STRING
 - AZURE_STORAGE_ACCOUNT_NAME
@@ -554,7 +554,7 @@ The default configuration:
     | Title
     |--------------------------------------------------------------------------
     |
-    | Keep it empty to use the default title 'Invoice' that comes from language file.
+    | Keep it empty to use the default title 'Invoice' that comes from the language file.
     |
     */
 
@@ -582,13 +582,13 @@ The default configuration:
 
     'size' => 'A4',
 
-By default, the system uses paper size A4 and and title Invoice. You can also set the invoice color here, use hexadecimal color code.
+By default, the system uses paper size A4 and title Invoices. You can also set the invoice color here, use hexadecimal color code.
 
 TIPs: Keep the title empty to use to allow the script to pick the title from the translated file.
 
 ### Google Analytics
 
-The application has a basic visitor analytics system builtin. But if you want to use Google Analytics then the application can get your Google Analytics data on your admin dashboard and report section in place of the built-in system. By configuring Google Analytic API you can see Page views, Sessions, Unique visits, Referrals, and Behaviors of visitors on your marketplace admin dashboard. Before enabling Google Analytics you must configure the application correctly to get the Analytics data.
+The application has a basic visitor analytics system built-in. But if you want to use Google Analytics then the application can get your Google Analytics data on your admin dashboard and report section in place of the built-in system. By configuring Google Analytics API you can see Pageviews, Sessions, Unique visits, Referrals, and Behaviors of visitors on your marketplace admin dashboard. Before enabling Google Analytics you must configure the application correctly to get the Analytics data.
 
 ::: warning
 
@@ -606,19 +606,19 @@ Next, in the list of available API’s select Google Analytics API. On the next 
 
 ![Image](./anne/google-analytics2.png)
 
-Now that you’ve created a project that has access to the Analytics API it’s time to download a file with these credentials. Click Credentials in the sidebar. Click Create credentials and choose Service account key from the dropdown list.
+Now that you’ve created a project that has access to the Analytics API it’s time to download a file with these credentials. Click Credentials in the sidebar. Click Create credentials and choose the Service account key from the dropdown list.
 
 ![Image](./anne/google-analytics3.png)
 
-On the next screen click over the New service account field and give the service account a name on the Service account name field and set the Role as project Owner. You can name it anything you’d like. Copy the email address in the service account id, we’ll use this email address later on in this guide. Select JSON as the key type and click Create button. A JSON file will be download to your computer, we’ll use this file to connect with Google.
+On the next screen click over the New service account field and give the service account a name on the Service account name field and set the Role as Project Owner. You can name it anything you’d like. Copy the email address in the service account id, we’ll use this email address later on in this guide. Select JSON as the key type and click Create button. A JSON file will be downloaded to your computer, we’ll use this file to connect with Google.
 
 ![Image](./anne/google-analytics4.png)
 
-Now you have the API credentials on your local computer’s download location. Rename the file to analytics-api.json and upload to the file to your project at the ../storage/app/ directory.
+Now you have the API credentials on your local computer’s download location. Rename the file to analytics-api.json and upload the file to your project at the ../storage/app/ directory.
 
 #### Grant permission and Get the View ID
 
-If you don’t have a Google Analytics account, create one from Google Analytics site. Go to Admin section from the sidebar and click User Management
+If you don’t have a Google Analytics account, create one from the Google Analytics site. Go to the Admin section from the sidebar and click User Management
 
 ![Image](./anne/google-analytics5.png)
 
@@ -632,7 +632,7 @@ On the next screen in the Email addresses field paste the client_email email add
 
 > TIPS: If you forgot to copy the service account id email address, you can get it from the JSON file you downloaded in the previous step.
 
-Go back to Admin section again and click View Settings. We need the View ID displayed there.
+Go back to the Admin section again and click View Settings. We need the View ID displayed there.
 
 ![Image](./anne/google-analytics8.png)
 
@@ -640,182 +640,182 @@ Open the .env file and update ANALYTICS_VIEW_ID with the value you got from Goog
 
 - ANALYTICS_VIEW_ID=your_view_id
 
-We’ve done the Google Analytics configuration and ready to view the Analytics on the application Dashboard. To enable Google Analytics navigate to:
+We’ve done the Google Analytics configuration and are ready to view the Analytics on the application Dashboard. To enable Google Analytics navigate to:
 
 SETTINGS → CONFIGURATION → REPORTS
 
-> Note: Only admin level user can see Google Analytics reports.
+> Note: Only admin role users can see Google Analytics reports.
 
 ## Appearance
 
-This article will help admin to change the storefront theme as well as merchant landing themes. Admin can create banners, sliders and manage theme with easy to understand interface.
+This article will help the admin to change the storefront theme as well as merchant landing themes. Admin can create banners, sliders, and manage themes with easy to understand interface.
 
 ### Banners
 
-Banners are used to make your store attractive to the customers.These banners contain image of sales, discounts and more.
+Banners are used to make your store attractive to customers. These banners contain images of sales, discounts, and more.
 
-**Anne store have four types of banners as follows**
+**Anne store has four types of banners as follows**
 
-- Slider For Desktop→ This section controls the main page slider of desktop.
+- Slider For Desktop→ This section controls the main page slider of the desktop.
 - Slider For Mobile→ This section controls the main page slider of mobile.
-- Hero→ This banner used for page medium content.
-- Picked→ This banner will comes in smallest and can use for brands.
-- Video→ This banner contain video.
+- Hero→ This banner is used for page medium content.
+- Picked→ This banner will come in the smallest and can use for brands.
+- Video→ This banner contains a video.
 
 ![Image](./anne/banner-home-page.png)
 
-Admin can add new banner, edit existing banner in respected banner types. Admin can also remove banners.
+Admin can add a new banner, edit the existing banner in respected banner types. Admin can also remove banners.
 
 ![Image](./anne/banner.png)
 
 ## Catalog
 
-The catalog is combined of product, category, product attribute and manufacturer modules. With the help of this modules, you will be able to manage your marketplace product catalog effortlessly. All the functionalities you need is there.
+The catalog is combined of product, category, product attribute, and manufacturer modules. With the help of these modules, you will be able to manage your marketplace product catalog effortlessly. All the functionalities you need are there.
 
 ### Categories
 
-- Categories is an important and essential feature which provide a relief to the customer to select and shop according to their requirement. A product can belong to multiple categories at a time. (for example, Fashion,Electronics )
+- Categories are an essential feature that provides relief to the customer to select and shop according to their requirement. A product can belong to multiple categories at a time. (for example, Fashion, Electronics )
 
-- Categories uses tree structure mean categories are defined on several levels. And toppest level categories called as root categories. You can create root categories,and then also create categories on second, third, etc. level within your root category. They are referred to as subcategories or child categories.
+- Categories use tree structure means categories are defined on several levels. And top-level categories are called root categories. You can create root categories, and then also create categories on second, third, etc. levels within your root category. They are referred to as subcategories or child categories.
 
-- You will see all categories in tree structure. And by clicking on any category you will be able to edit the category.
+- You will see all categories in a tree structure. And by clicking on any category you will be able to edit the category.
 
 ![Image](./anne/categories.png)
 
 #### Create category And Edit category
 
-- In sidebar, go to Products → Categories.
+- In the sidebar, go to Products → Categories.
 - Click Add New Category.
 
 ![Image](./anne/category1.png)
 
-- Fill the category details as per your need.
+- Fill in the category details as per your need.
 
 ![Image](./anne/category2.png)
 
-- In case you want to create a root category, you don't have to select parent category field.
-- In case you want to create sub category , you can choose a parent category.
+- In case you want to create a root category, you don't have to select the parent category field.
+- In case you want to create a subcategory, you can choose a parent category.
 
 - Click Category image to upload an image for your category. You can upload an image that represents your category or an image of a product from the category.
 
 - Enter the description. You can describe what kind of products are in that category, or just leave it blank.
 
--And you can also enable category features like- megamenu,active.
+-And you can also enable category features like- megamenu, active.
 
-- Edit category is same as create new category, just select the category in tree which you want to edit. Now you can update fields.
+- Edit category is the same as creating a new category, just select the category in a tree that you want to edit. Now you can update fields.
 
 ### Brands
 
-In the brand section there are the brands of the different product that are available in the store can be seen.
-Brand used for better navigation in product for customer.
+In the brand section, there are the brands of the different products that are available in the store can be seen.
+The brand is used for better navigation in products for a customer.
 
-- In sidebar, go to Products → Brands.
+- In the sidebar, go to Products → Brands.
 
 **Create new Brand**
 
-- Click on plus icon for create new brand.
-- Now you can fill fill form of brand, you can also provide social media link of the brand.
-- You can also upload image of the brand.
-- Click on save icon at right side of bottom.
+- Click on the plus icon to create a new brand.
+- Now you can fill the form of the brand, you can also provide a social media link of the brand.
+- You can also upload an image of the brand.
+- Click on the save icon on the right side of the bottom.
 
 ![Image](./anne/brand1.png)
 
 **Brands List**
 
-- You can edit,clone and delete brand from here.
+- You can edit, clone, and delete the brand from here.
 
 ![Image](./anne/brands.png)
 
 **Brand Export**
 
-- You can export all yours brands in the csv format by going to the manage brands page where the brands grid is displayed. On the right corner of the grid there is an excel logo from where the you can export the csv which will have grid columns.
+- You can export all your brands in the CSV format by going to the manage brands page where the brand's grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
 
 ![Image](./anne/excel-and-search.png)
 
 ### Sizes
 
-In the size section there are the sizes of the different products. Its like variant of the product , means single a product is available in multiple sizes.
+In the size section, there are the sizes of the different products. It's a variant of the product, which means single a product is available in multiple sizes.
 
-- Customer can choose the product size accoring to his/her need.
+- Customer can choose the product size according to his/her need.
 
-- In sidebar, go to Products → Sizes.
+- In the sidebar, go to Products → Sizes.
 
 **Create new Size**
 
-- Click on plus icon for create new size.
-- Now you can fill fill form for size details.
-- Click on save icon at right side of bottom.
+- Click on the plus icon to create a new size.
+- Now you can fill the form for size details.
+- Click on the save icon on the right side of the bottom.
 
 ![Image](./anne/size.png)
 
 **Size List**
 
-- You can edit,clone and delete size from here.
+- You can edit, clone, and delete size from here.
 
 ![Image](./anne/sizes.png)
 
 **Size Export**
 
-- You can export all yours sizes in the csv format by going to the manage sizes page where the sizes grid is displayed. On the right corner of the grid there is an excel logo from where the you can export the csv which will have grid columns.
+- You can export all your sizes in the CSV format by going to the manage sizes page where the sizes grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
 
 ![Image](./anne/excel-and-search.png)
 
 ### Products
 
 - You can upload products in bulk using a CSV-formatted import file.
-- In Product list page, click on `Import Products`.
-- It will redirect you to product import page. There you can import csv file.
+- In the Product list page, click on `Import Products`.
+- It will redirect you to the product import page. There you can import a CSV file.
 
 ![Image](./anne/product-import.png)
 
 ### Popular Searches
 
-Popular Searches used for better navigation in product for customer.
+Popular Searches are used for better navigation in products for customers.
 
-- In sidebar, go to Products → Popular Searches.
+- In the sidebar, go to Products → Popular Searches.
 
 **Create new Popular Searches**
 
-- Click on plus icon for create new popular Search.
-- Now you can fill name and popularity.
-- Click on save icon at right side of bottom.
+- Click on the plus icon to create a new popular Search.
+- Now you can fill in name and popularity.
+- Click on the save icon on the right side of the bottom.
 
 ![Image](./anne/popular-searches1.png)
 
 **Popular searches List**
 
-- You can edit,clone and delete popular searches from here.
+- You can edit, clone, and delete popular searches from here.
 
 ![Image](./anne/popular-searches.png)
 
 **Popular Searches Export**
 
-- You can export all yours popular searches in the csv format by going to the manage popular searches page where the popular searches grid is displayed. On the right corner of the grid there is an excel logo from where the you can export the csv which will have grid columns.
+- You can export all your popular searches in the CSV format by going to the manage popular searches page where the popular searches grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
 
 ![Image](./anne/excel-and-search.png)
 
 ## Import And Export
 
-- In import you can add product and category in bulk.
+- In import, you can add products and categories in bulk.
 
 - The product bulk upload feature will help you to import your old product list into your catalog system. There is a CSV template to help you, this template is like a sample, use the template to prepare your product list.
 
-- In Export you can get data in csv format file and also able to download it.
+- In Export, you can get data in a CSV format file and also able to download it.
 
 ### Import Product
 
-- Product create one by one take a lot of time so for add product in bulk import product comes handy.
-- Product import in store through is the fastest way to upload catalog or make bulk changes to products in an existing Anne store catalog.
+- Product creation one by one takes a lot of time so adding products in bulk import products comes in handy.
+- Product import in-store through is the fastest way to upload a catalog or make bulk changes to products in an existing Anne store catalog.
 - When importing, Anne converts the data from the uploaded import file into products in your online store.
-- Only CSV format file allowed to import.
+- Only CSV format files are allowed to import.
 - You can also see the sample import file format.
 
 - Once you’ve prepared your CSV file, you can import it into your store
 
-  - In sidebar, go to Import/Export → Import Product.
+  - In the sidebar, go to Import/Export → Import Product.
   - Click Import Products.
   - Click Choose file and select the CSV file from your computer.
-  - After Sumit file wait for somtime and you will see all products thorough import details.
+  - After Submit file wait for some time and you will see all products thorough import details.
 
 ![Image](./anne/import-product.png)
 
@@ -825,102 +825,102 @@ The first row of the template CSV file is the header. Don’t change this row. T
 
 :::
 
-In csv some fields are mandatory as shown below
+In CSV file, some fields are mandatory as shown below
 
-1. `barcode or sku` → barcode or sku one of them is mandatory in each raw, otherwise it will show error like barcode and sku not provided.
+1. `barcode or SKU → barcode or SKU one of them is mandatory in each raw, otherwise, it will show error like barcode and SKU not provided.
 2. style_code → style_code is provided via vendor for each item.
 3. `ean_no` → EAN / UPC Number is used for European Article Number.
 4. `article_code` → article_code is provided via vendor for each item.
-5. `product_master_id` → product_master_id is used to group same product with diffrent options. like- color, size etc. It will defined via vendor.
+5. `product_master_id` → product_master_id is used to group the same product with different options. like- color, size, etc. It will be defined via the vendor.
 6. `name` → name is provided via the vendor for its better navigation.
-7. `description` → short desciption of product.
+7. `description` → short description of the product.
 8. brand_id and brand →
 
-- brand is used for brand name and brand_id is used for unique brand id which provided via vendor.
-- In case you want to add brand in product you have to provide both, otherwise brand will not assign to product.
-- If you provide both of them then it will look for brand, if not found then create brand and will assign to product.
+- brand is used for brand name and brand_id is used for unique brand id which provided via the vendor.
+- In case you want to add a brand to the product you have to provide both, otherwise, the brand will not assign to the product.
+- If you provide both of them then it will look for the brand, if not found then create a brand and will assign it to a product.
 
 9. categories →
 
-- categories are pipe(|) seprated multiple category id's, which defind via vendor. You can also provide single id.
-- In case you provide at least one category id , it will look for category. And if categories found then assined to product.
-- In at least one category found case, it will automatically choose category from categories.
+- categories are pipe(|) separated multiple category id's, which are defined via the vendor. You can also provide a single id.
+- In case you provide at least one category id, it will look for the category. And if categories are found then assigned to the product.
+- In the case of at least one category found, it will automatically choose a category from categories.
 
-10. `mrp` → mrp is a marketing price , which can not be negative.
-11. `price` → mrp is a selling price , which can not be negative.
-12. `hsn` → hsn is Harmonised System of Nomenclature code and it is mandatory in country india. In other country it is not mandatory.
+10. MRP → MRP is a marketing price, which can not be negative.
+11. price → price is a selling price, which can not be negative.
+12. HSN → HSN is Harmonised System of Nomenclature code and it is mandatory in-country India. In other countries, it is not mandatory.
 13. tax → payable per unit of good or service product.
 14. color and color_code →
 
 - Color is used for color name and color_code is used for unique color code.
 - It will look for color via color code and if not found then it will create color.
-- At last it will assign color to product.
+- At last, it will assign a color to the product.
 
 15. size →
 
-- you can provide any size to product.
+- you can provide any size to the product.
 - It will look for size via its name and if not found then create a new size.
-- At last it will assign size to product.
+- At last, it will assign that size to the product.
 
-16. gender → gender can be male, female or unisex.
+16. gender → It can be male, female, or unisex.
 17. `currency` → currency is used for country currency.
-18. `vendor_phone`, `vendor_email` and `vendor_name` → vendor info in mandatory, if not passed then it will assign logged in user to product as vendor.
+18. `vendor_phone`, `vendor_email` and `vendor_name` → vendor info is mandatory, if not passed then it will assign a logged-in user to the product as a vendor.
 19. `manufacturer` → manufacture means where the product is manufactured.
 20. key_features → key_features is a pipe(|) separated list of features.
 21. product_specifications →
 
-- product_specifications is provided as pipe(|) separated and inside it :: separated.
-- It will look specifications and in case not found then it will create new feature.
-- At last it will assing specifications to product.
+- product_specifications is provided as pipe(|) separated and inside it:: separated.
+- It will look at specifications and in case not found then it will create new specifications.
+- At last, it will assign those specifications to the product.
 
 22. product_details →
 
-- product_details is provided as pipe(|) separated and inside it :: separated.
-- It will look details and in case not found then it will create new feature.
-- At last it will assing details to product.
+- product_details is provided as pipe(|) separated and inside it:: separated.
+- It will look at details and in case not found then it will create new features.
+- At last, it will assign these details to the product.
 
-23. return_info → return_info is text value of return policy.
+23. return_info → return_info is the text value of the return policy.
 24. `country_of_origin` → It is the country of origin of the product.
 25. `featured image` and images →
 
-- Images is comma(,) separated list images.
+- Images are comma(,) separated list images.
 - It will upload images into respected servers.
-- It will automatically choose the 1st image insdie images as `featured image` (img).
-- When `featured image` provided and images not provided, it will pick img and push to images array.
-- When `featured image` and `images` both are provided, where as `featured image` does not contain inside images array, it will ignore `featured image`
+- It will automatically choose the 1st image inside images as `featured image` (img).
+- When `featured image` is provided and images are not provided, it will pick img and push to images array.
+- When `featured image` and `images` both are provided, whereas `featured image` does not contain inside images array, it will ignore `featured image`
 
-> Note - while uploading image, restricted platfrom url not allowed, like google dive and dropbox
+> Note - while uploading an image, restricted platform URL not allowed, like google drive and dropbox
 
-26. condition → condition can be new, old or refurnished.
-27. gtin → Global Trade Item Number (GTIN) is a unique and internationally recognized identifier for a product.
+26. condition → It can be new, old, or refurnished.
+27. GTIN → Global Trade Item Number (GTIN) is a unique and internationally recognized identifier for a product.
 28. stock → In case of inventory updation you can provide stock in numbers.
-29. item_id → item_id is a unique id of product which is defined via vendor.
-30. warranty → warranty is info about product warranty in text.
-31. age_min,age_max and age_unit → age parameters are used for age group.
-32. keywords → keywords are used for better product search.
-33. type → type can be physical or digital.
-34. replace_allowed, return_allowed and return_validity_in_days → return and replace info about the product.
-35. metaTitle and metaDescription → The meta title and description tags are part of the HTML code on each product page and can be optimised separately for search engines. The meta title and description SEO explain to the search engine what this page is relevant for and for which terms it should rank
+29. item_id → item_id is a unique id of a product that is defined via the vendor.
+30. warranty → It is info about product warranty in text.
+31. age_min,age_max, and age_unit → age parameters are used for the age group.
+32. keywords → These are used for better product search.
+33. type → It can be physical or digital.
+34. replace_allowed, return_allowed, and return_validity_in_days → return and replace info about the product.
+35. metaTitle and metaDescription → The meta title and description tags are part of the HTML code on each product page and can be optimized separately for search engines. The meta title and description SEO explain to the search engine what this page is relevant for and for which terms it should rank
 
-36. sizechart → it is a image of sizechart. images will upload in respected servers.
+36. sizechart → It is an image of a sizechart. images will be uploaded to respected servers.
 
-> In csv if any raw field contain `DELETE` then that perticular field will be deleted from that product.
+> In CSV if any raw field contains `DELETE` then that particular field will be deleted from that product.
 > HighLighted fields are mandatory.
 
 #### Import Details
 
-- Import detail is at the same page of import product.
-- You can see each raw information of the product ,like what happen to what raw.
-- At the time of tracking you can also refresh the details by clicking on refresh button at right bottom corner.
+- Import detail is on the same page as the imported product.
+- You can see each raw information of the product, like what happened to what raw.
+- At the time of tracking you can also refresh the details by clicking on the refresh button at the right bottom corner.
 
 ![Image](./anne/import-detail.png)
 
 ### Import Category
 
-- Import Category is same as import product, in case you want to add categories in bulk you can use this.
+- Import Category is the same as import product, in case you want to add categories in bulk you can use this.
 - Import Category sample format link also there.
-- In sidebar, go to Import/Exxport → Import Category.
-- When you csv file ready then choose file and upload it.
+- In the sidebar, go to Import/Export → Import Category.
+- When your CSV file is ready then choose the file and upload it.
 
 ![Image](./anne/import-category.png)
 
@@ -930,138 +930,138 @@ The first row of the template CSV file is the header. Don’t change this row. T
 
 :::
 
-In csv some fields are mandatory as shown below
+In CSV file, some fields are mandatory as shown below
 
-1. `category_id` → category_id is used for category Id , which is unique provided by vendor.
-   It will look for category and if not exist then create category with name.
-2. `category` → category is used for category name.
-3. parent_category_id → parent_category_id is used for category Id , which is unique provided by vendor.
-   It will look for category and if not exist then create category with name.
-4. parent_category → parent_category is used for parent category name.
-5. img → img contain the image link, image will upload into respected server.
+1. category_id → category_id is used for category Id, which is uniquely provided by the vendor.
+   It will look for the category and if not exist then create a new category with the name.
+2. category → It is used for the category name.
+3. parent_category_id → parent_category_id is used for category Id, which is uniquely provided by the vendor.
+   It will look for the category and if not exist then create a new category with the name.
+4. parent_category → parent_category is used for the parent category name.
+5. img → img contain the image link, the image will upload into the respected server.
 6. active → category info about its activation.
-7. position → position is used for sorting of categoies.
-8. megamenu → megamenu is used for meagamenu activation of category. means category will be liste in megamenu or not.
+7. position → position is used for sorting of categories.
+8. megamenu → megamenu is used for megamenu activation of category. means category will be listed in megamenu or not.
 9. featured → featured is used for category. means category will be shown to customer or not.
-10. shopbycategory → shopbycategory will allow customer to filter products via category.
-11. brand_id → brand_id contain the unique brand Id which provided by vendor. It will look for brand and if found then assign it to category.
-12. level → level are used to locate the category level, because its uses tree level approach.
+10. shopbycategory → shopbycategory will allow customers to filter products via category.
+11. brand_id → brand_id contains the unique brand Id which provided by the vendor. It will look for the brand and if found then assign it to a category.
+12. level → level is used to locate the category level because its uses a tree level approach.
 
 ::: warning
 
-Category use level wise approach, Categories must be increasing format of level. Parent must comes before its child.
+Category use level-wise approach, Categories must be increasing format of level. Parent must come before its child.
 
 :::
 
 ### Export
 
-- Whenever you want to take a backup of your store , in that case you can use export feature.
-- This feature will export file in csv format. And you can upload this file to anne.
-- You can export Products, Brands, Categories, Features, Sizes, Users and Orders.
-- You can apply filters and you can export data as per your choise.
-- When you click on Export All, automatically a csv file will download into your system with data.
+- Whenever you want to take a backup of your store, in that case, you can use the export feature.
+- This feature will export files in CSV format. And you can upload this file to your store.
+- You can export Products, Brands, Categories, Features, Sizes, Users, and Orders.
+- You can apply filters and you can export data as per your choice.
+- When you click on Export All, automatically a CSV file will download into your system with data.
 
 ![Image](./anne/exports.png)
 
 ## Discounts
 
-Offering a discount is the best way to get attraction from buyers. You can create an unlimited number of coupons for your store and you have full control over the promotions. You can set the validity time period, total quantity, how many times a single buyer can get the discount and more control. The coupon value can a fixed amount or a percentage of the total order amount.
+Offering a discount is the best way to get attraction from buyers. You can create an unlimited number of coupons for your store and you have full control over the promotions. You can set the validity period, total quantity, how many times a single buyer can get the discount, and more control. The coupon value can be a fixed amount or a percentage of the total order amount.
 
 **Coupon for specific customer/s**
-You can create coupons that can be used by a single customer or specific group of customers. To limit the coupon to customers check the LIMITED TO CUSTOMERS option and select customer/s.
+You can create coupons that can be used by a single customer or a specific group of customers. To limit the coupon to customers check the LIMITED TO CUSTOMERS option and select customer/s.
 
 **Coupon for specific shipping zone/s**
-You can create coupons that can be used by the customers from a specific shipping zone of zones. To limit the coupon to shipping zone check the LIMITED TO SHIPPING ZONE option and select shipping zone/s.
+You can create coupons that can be used by the customers from a specific shipping zone of zones. To limit the coupon to the shipping zone check the LIMITED TO SHIPPING ZONE option and select shipping zone/s.
 
 ## Support Desk
 
-The system has built-in module for customer support Messages
+The system has a built-in module for customer support Messages
 
 ### Messages
 
-A messaging module where you can receive messages. The message module design to receive communications from customers (customer-merchant and customer-platform).
-The contact us form messages will be in platform inbox.
+A messaging module where you can receive messages. The message module is designed to receive communications from customers (customer-merchant and customer-platform).
+The contact us form messages will be in the platform inbox.
 
 <!-- ### Refunds
 
-When a customer opens a dispute he/she can also request for a partial or full refund of the order total. You can also initiate a refund for an order from your admin panel.
+When a customer opens a dispute he/she can also request a partial or full refund of the order total. You can also initiate a refund for an order from your admin panel.
 If you’ve proper permission, you can either approve or decline the refund request in this section. -->
 
 ## Utilities
 
-Utility is an important characteristic of business is the creation of utilities is goods so that consumers may use them.
+The utility is an important characteristic of business is the creation of utilities is goods so that consumers may use them.
 
 ### Pages
 
 - A page is used for Search engine optimization, which is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.
-- In sidebar, go to Utilities → Pages.
+- In the sidebar, go to Utilities → Pages.
 - You will see the list of pages here.
 
 ![Image](./anne/pages.png)
 
 **Create/Edit Page**
 
-- For create page click on add icon at the bottom of right side, and it will redirect to page edit page.
-- Now you can able to create page.
-- For edit page click on pencil icon of page on the listing page and you will redirect to page edit page.
-- After update details click on save icon.
+- To create a page click on add icon at the bottom of the right side, and it will redirect to the edit page.
+- Now you can able to create a page.
+- For the edit page click on the pencil icon of the page on the listing page and you will redirect to the page edit page.
+- After updating details click on the save icon.
 
 ![Image](./anne/page.png)
 
 **Page Export**
 
-- You can export all yours pages in the csv format.
-- Click on top right corner at excel logo of the listing page.
-- And a csv formatted file will download in your system, which will have data in grid columns.
+- You can export all your pages in CSV format.
+- Click on the top right corner of the excel logo of the listing page.
+- And a CSV formatted file will download in your system, which will have data in grid columns.
 
 ![Image](./anne/excel-and-search.png)
 
 ### Blogs
 
 - A blog is a discussion or informational of store features.
-- In sidebar, go to Utilities → Blogs.
+- In the sidebar, go to Utilities → Blogs.
 - You will see the list of blogs here.
 
 ![Image](./anne/blogs.png)
 
 **Create/Edit Blog**
 
-- For create blog click on add icon at the bottom of right side, and it will redirect to blog edit page.
-- Now you can able to create blog.
-- For edit blog click on pencil icon of blog on the listing page and you will redirect to blog edit page.
-- After update details click on save icon.
+- To create a Blog click on add icon at the bottom of the right side, and it will redirect to the blog edit page.
+- Now you can able to create a new blog.
+- For edit blog click on the pencil icon of blog on the listing page and you will redirect to the blog edit page.
+- After updating details click on the save icon.
 
 ![Image](./anne/blog.png)
 
 **Blog Export**
 
-- You can export all yours blogs in the csv format.
-- Click on top right corner at excel logo of the listing page.
-- And a csv formatted file will download in your system, which will have data in grid columns.
+- You can export all your blogs in CSV format.
+- Click on the top right corner of the excel logo of the listing page.
+- And a CSV formatted file will download in your system, which will have data in grid columns.
 
 ![Image](./anne/excel-and-search.png)
 
 ### Frequently Asked Questions (FAQ)
 
-- FAQ's are series of questions paired with answers, that provides basic information.
+- FAQs are a series of questions paired with answers, that provide basic information.
 - These are very helpful for customers to find their resolutions easily.
-- In sidebar, go to Utilities → FAQ.
+- In the sidebar, go to Utilities → FAQ.
 
 ![Image](./anne/faqs.png)
 
 **Create/Edit FAQ**
 
-- For create FAQ click on add icon at the bottom of right side, and it will redirect to FAQ edit page.
-- Now you can able to create FAQ.
-- For edit FAQ click on pencil icon of FAQ on the listing page and you will redirect to FAQ edit page.
-- After update details click on save icon.
+- To create an FAQ click on add icon at the bottom of the right side, and it will redirect to the FAQ edit page.
+- Now you can able to create a FAQ.
+- For edit FAQ click on the pencil icon of FAQ on the listing page and you will redirect to the FAQ edit page.
+- After updating details click on the save icon.
 
 ![Image](./anne/faq.png)
 
 **FAQ Export**
 
-- You can export all yours fequently asked questions in the csv format.
-- Click on top right corner at excel logo of the listing page.
-- And a csv formatted file will download in your system, which will have data in grid columns.
+- You can export all your frequently asked questions in the CSV format.
+- Click on the top right corner of the excel logo of the listing page.
+- And a CSV formatted file will download in your system, which will have data in grid columns.
 
 ![Image](./anne/excel-and-search.png)
