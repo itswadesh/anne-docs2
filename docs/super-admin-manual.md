@@ -7,8 +7,78 @@ date: 2021-09-08 09:40:12
 
 ## Getting started
 
-To access all features on Anne, you have to be a super role user. Only a super user can create another super user or upgrade to a super user.
-Super user can access major modules like stores.
+To access core features on Anne, you have to be a super role user. Only a super user can make a super user. Super users can access major modules like stores.
+
+To be a super user, At first, you have to register as a vendor. An Existing super admin will change your role and verify you.
+
+### Sign In And Sign Out
+
+- You can log in to Anne on your browser.
+
+**To log in**
+
+- Go to the Anne admin panel login page.
+- If you signed up with an email address and password, enter them and click `Sign In`.
+- password should be case-sensitive.
+  ![Image](./anne/login.png)
+
+**To log out**
+
+- Go to your Anne admin panel at [https://admin.anne.biz/](https://admin.anne.biz/)
+- Click on your left sidebar bottom at logout.
+
+### Dashboard/Reports
+
+When you logged into your account, you will redirect to the dashboard page. The menu page will be listed in the left corner of the page & the 1st option that will be opened is Dashboard.
+
+In the Dashboard, there are different reports that super admin can see such like
+
+**Statistics**
+
+- Total Orders → Total how many orders have been placed from all stores will be shown here as a count.
+- Total customers → Total how many users ordered products will be shown here as a count.
+  > A user can count only one time, however, he/she placed multiple orders.
+- Total products → Total how many products will be shown here as a count.
+- Total payments → Total how many payments are done will be shown here as a count.
+
+**Earning** → It will show the total amount of orders placed in a month.
+
+**Latest Orders** → This box will show the latest five orders placed. The latest orders will have a different background color based on the order status.
+
+**Instructional Videos** → This box has a video list, how things work in the panel.
+
+**5 Top Vendors** → This box has a list of top-selling vendors. On top highest selling amount vendor and at bottom lowest selling amount vendor.
+
+**Transactions** → This box will show the latest five payments in the store.
+
+![Image](./anne/dashboard.png)
+
+### SideBar
+
+- Anne's sidebar is a useful component of website navigation design. The super admin can see all the services in one place through the Anne sidebar, also can manage as per need.
+
+![Image](./anne/side-bar-super-admin.png)
+
+### Profile
+
+- In the sidebar, go to My Profile → profile.
+- Here super admin can update profile information.
+
+![Image](./anne/update-profile1.png)
+
+- super admin can add its address, This address will use for pick-up locations.
+
+![Image](./anne/update-profile2.png)
+
+- admin can also close the account from here.
+
+![Image](./anne/update-profile5.png)
+
+### Change Password
+
+Super admin can change login password via entering a current password and new password. And after successful change super admin will receive a confirmation email.
+
+![Image](./anne/change-password.png)
 
 ## User Management
 
@@ -19,7 +89,7 @@ There are multiple types of users on the system. All users get access to differe
 ### Users
 
 - Super admin can only access user management.
-- Users listing page, super admin can see all users and search for a specific user. Super admin can enable or disable any user access on the website.
+- On the Users listing page, the super admin can see all users and search for a specific user. Super admin can enable or disable any user access on the website.
 - A user must have a role to get access to this system.
 
 We have four types of user roles
@@ -62,6 +132,36 @@ Color used for better navigation in product for a customer.
 **Color Export**
 
 - You can export all your colors in the CSV format by going to the manage colors page where the colors grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
+
+![Image](./anne/excel-and-search.png)
+
+### Units
+
+In this section, you can set measurement units and data formats and some platform rules that will be used to control the marketplace.
+
+In the unit section, there are the units of the different products that are available in the store can be seen.
+A unit used for better navigation in product for a customer.
+
+- In the sidebar, go to Products → Units.
+
+**Create new Unit**
+
+- Click on the plus icon to create a new unit.
+- Now you can fill the form of unit.
+- Unit Code is a unique code, duplicate unit code is not allowed.
+- Click on the save icon on the right side of the bottom.
+
+![Image](./anne/unit.png)
+
+**Units List**
+
+- You can edit, clone, and delete the unit from here.
+
+![Image](./anne/units.png)
+
+**Unit Export**
+
+- You can export all your units in the CSV format by going to the manage units page where the units grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
 
 ![Image](./anne/excel-and-search.png)
 
@@ -125,45 +225,24 @@ Super admin can see the list of all GDPR Data Deletion Requests. And Super admin
 
 ![Image](./anne/store.png)
 
-### Units
+## Monitoring
 
-In this section, you can set measurement units and data formats and some platform rules that will be used to control the marketplace.
+- Monitoring is a feature that allows you to monitor your product.
+- In the sidebar, go to monitoring.
 
-In the unit section, there are the units of the different products that are available in the store can be seen.
-A unit used for better navigation in product for a customer.
+**Through this you can see the list of products of**
 
-- In the sidebar, go to Products → Units.
+1. No Stock
+2. No Image
+3. No Price
+4. Invalid Price
+5. No Description
 
-**Create new Unit**
+- You can edit and delete this product from here.
+- You can also add a new product from here via a click on the plus icon.
+- You will see a product like these
 
-- Click on the plus icon to create a new unit.
-- Now you can fill the form of unit.
-- Unit Code is a unique code, duplicate unit code is not allowed.
-- Click on the save icon on the right side of the bottom.
-
-![Image](./anne/unit.png)
-
-**Units List**
-
-- You can edit, clone, and delete the unit from here.
-
-![Image](./anne/units.png)
-
-**Unit Export**
-
-- You can export all your units in the CSV format by going to the manage units page where the units grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
-
-![Image](./anne/excel-and-search.png)
-
-### Sync
-
-In this section, you will sync images with the server, sync auto-complete, and sync with elastic search, etc.
-
-> Note - while uploading an image, restricted platform URL not allowed, like google drive and dropbox
-
-- In the sidebar, go to Settings → Sync.
-
-![Image](./anne/sync.png)
+![Image](./anne/monitoring.png)
 
 <!-- ## Manage Vendors
 
@@ -186,23 +265,3 @@ Vendors can upload the required documents from the profile page and the admin wi
 When a vendor uploads documents to verify you’ll see the PENDING VERIFICATIONS box with the number of requests.
 
 Click over the symbol to download the document and do the manual inspection. After you’re satisfied with the submitted documents you need to click over the VERIFY button to complete the action. After you’ve done you can also delete the file using the button to keep your system clean. -->
-
-<!-- #### Edit Customers
-
-You can change an existing customer profile to update their information.
-
-**To edit a customer’s information**
-
-- In the sidebar, go to Customers.
-- Click the pencil icon of the customer profile you want to edit.
-- In the Edit customer dialog, you can change a customer’s
-
-  - firstName and lastName
-  - email address
-  - Shipping Charges(in role vendor)
-  - Free Shipping On(in role vendor)
-  - Role
-  - active and verified
-    Click Save to confirm your changes
-
-![Image](./anne/customer-edit.png) -->

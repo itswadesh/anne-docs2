@@ -20,8 +20,17 @@ Okay, let’s get started!
 - After filling in all details, click on `sign-up button, after this server will check the provided info is valid or not, if it is valid then it will create your account, or if it detects that the info is invalid then you have to fill the details carefully.
 - Email must be unique, not registered with us already.
 - You can fill in details as in the image below
+- Store owner's role is admin via default when he/she create a new store.
 
 ![Image](./anne/sign-up.png)
+
+### Store Set Up
+
+- After Successful signup, it will redirect to Store set up page, it will ask for the store configuration.
+
+![Image](./anne/store-set-up0.png)
+
+The fields shown above have to be filled by the admin to open up a new shop and after the store is set up, you will be able to access the store feature.
 
 ### Sign In And Sign Out
 
@@ -43,6 +52,65 @@ Okay, let’s get started!
 
 - If you want to become an admin for an existing store, Then you need to first register as a vendor and the super admin will assign you a store and update your role in the store.
 
+### Dashboard/Reports
+
+When you logged into your account, you will redirect to the dashboard page. The menu page will be listed in the left corner of the page & the 1st option that will be opened is Dashboard.
+
+In the Dashboard, there are different reports that admin can see such like
+
+**Statistics**
+
+- Total Orders → Total how many orders have been placed from the store will be shown here as a count.
+- Total customers → Total how many users ordered store products will be shown here as a count.
+  > A user can count only one time, however, he/she placed multiple orders.
+- Total products → Total how many products in-store will be shown here as a count.
+- Total payments → Total how many payments are done in-store will be shown here as a count.
+
+**Earning** → It will show the total amount of orders placed in a month in store.
+
+**Latest Orders** → This box will show the latest five orders placed in the store. The latest orders will have a different background color based on the order status.
+
+**Instructional Videos** → This box has a video list, how things work in the panel.
+
+**5 Top Vendors** → This box has a list of top-selling vendors in the store. On top highest selling amount vendor and at bottom lowest selling amount vendor.
+
+**Transactions** → This box will show the latest five payments in the store.
+
+![Image](./anne/dashboard.png)
+
+### SideBar
+
+- Anne's sidebar is a useful component of website navigation design. The admin can see all the services in one place through the Anne sidebar, also can manage as per need.
+
+![Image](./anne/side-bar-admin.png)
+
+### Profile
+
+- In the sidebar, go to My Profile → profile.
+- Here admin can update profile information.
+
+![Image](./anne/update-profile1.png)
+
+- admin can add its address, This address will use for pick-up locations.
+
+![Image](./anne/update-profile2.png)
+
+- admin can add bank account details.
+
+![Image](./anne/update-profile3.png)
+
+> Please make sure details are correct because these details will use in case of payment withdrawal.
+
+- admin can also close the account from here.
+
+![Image](./anne/update-profile5.png)
+
+### Change Password
+
+Admin can change login password via entering a current password and new password. And after successful change admin will receive a confirmation email.
+
+![Image](./anne/change-password.png)
+
 ### Resetting Password
 
 - You can reset your login password any time if you forget it, or if you want to keep your account more secure.
@@ -61,23 +129,13 @@ Okay, let’s get started!
 
   ![Image](./anne/reset-pwd.png)
 
-<!-- ### Store Set Up
-
-- After Successful signup, it will redirect to Store set up page, it will ask for the store configuration.
-
-![Image](./anne/store-set-up.png)
-
-![Image](./anne/store-set-up1.png)
-
-The fields shown above have to be filled by you to open up a new shop and after store set up, you will be able to access the store feature. -->
-
 ## Configurations
 
 Before your platform goes live you need to configure the platform to set everything right and make it usable with no issues. In this section, you will set branding, configure Payment Provider, Email Service, Search Service provider, Newsletter, google analytic, Social Media login, etc. To do some configuration you may have to modify a few config files in the system. Check this guide to know how to modify the .env environment file.
 
 - In the sidebar, go to Settings → Store Settings.
 
-### Email Configuration
+<!-- ### Email Configuration
 
 By default, the system is set up to log all emails into files. You have to configure this setting to send emails. You may use any of these supported services→ sendmail, mailgun, mandrill, and sparkpost. To configure email, open the .env file and update these keys with your values.
 
@@ -85,9 +143,9 @@ By default, the system is set up to log all emails into files. You have to confi
 
 > The system will generate errors if the mail fails. So double-check the email configuration. Talk to your email/hosting service provider if you’re not sure what to do.
 
-:::
+::: -->
 
-#### Testing Emails
+<!-- #### Testing Emails
 
 If you don’t have a mail server or just testing the application you can fake the actual sending of emails. Anne has a log driver and the Mailtrap driver for this job.
 
@@ -110,7 +168,7 @@ Finally, you may use a service like Mailtrap and the SMTP driver to send your em
 - MAIL_REPLY_TO_ADDRESS=reply@example.com
 - MAIL_REPLY_TO_NAME=Reply
 
-The MAIL_FROM_ADDRESS and MAIL_FROM_NAME will be used to send an email by your marketplace where no specific sender information is available to use.
+The MAIL_FROM_ADDRESS and MAIL_FROM_NAME will be used to send an email by your marketplace where no specific sender information is available to use. -->
 
 ### Store Settings/System Settings
 
@@ -369,7 +427,7 @@ Next, go to the Developers API keys section from the sidebar and get the Publish
 
 **Handling Stripe Webhooks**
 
-One more thing is remaining to finish configuring the Stripe side. And that is webhooks. By setting webhooks we allow Stripe to communicate with your platform when any changes happen on Stripe’s site like subscription update, cancel, payment failed, etc. so that your marketplace can take actions to manage the vendor account on your marketplace. zCart has everything configured for you, now you just have to set the URL and the secret key for secure communications.
+One more thing is remaining to finish configuring the Stripe side. And that is webhooks. By setting webhooks we allow Stripe to communicate with your platform when any changes happen on Stripe’s site like subscription update, cancel, payment failed, etc. so that your marketplace can take actions to manage the vendor account on your marketplace. Anne has everything configured for you, now you just have to set the URL and the secret key for secure communications.
 
 Go to the Developers Webhooks section from the sidebar and click the Add endpoint button. On the next window enter https://your_domain/stripe/webhook in the Endpoint URI field and add the below events on the Events to send section.
 
@@ -404,7 +462,7 @@ Now your marketplace can use Stripe APIs to manage payments. But still, we’re 
 
 ::: warning
 
-> The stripe platform account and the connected account (seller) can’t be the same account. To test stripe connect use different accounts.
+> The stripe platform account and the connected account (seller) can’t be the same. To test stripe connect use different accounts.
 
 :::
 
@@ -416,9 +474,9 @@ PayPal is an online payment system that makes paying for things online and sendi
 
 PayPal is now the fifth most accepted payment option after Visa, Mastercard, American Express, and Discover and is available at millions of stores online.
 
-## Optional Configurations
+<!-- ## Optional Configurations
 
-This section will guide you to configure some optional modules. This is not a mandatory configuration for your marketplace but allows you to make it more personal. Like you can set what will be the color of the order invoice generated from your marketplace.
+This section will guide you to configure some optional modules. This is not a mandatory configuration for your marketplace but allows you to make it more personal. Like you can set what will be the color of the order invoice generated from your marketplace. -->
 
 <!-- ### Full-text Search with Algolia/Configure Algolia Search
 
@@ -434,7 +492,7 @@ To configure Algolia, you need your algolia APP ID and SECRET KEY from Algolia. 
 
 You don’t have to do anything more. The application will take care of everything you need to index your data to Algolia. -->
 
-### Social Media Login
+<!-- ### Social Media Login
 
 The system is integrated with Facebook and Google+ to allow social media login for Customers. You have to configure your marketplace to use this feature.
 
@@ -539,13 +597,13 @@ Follow the azure Docs to obtain your connection string, account name, access key
 - AZURE_STORAGE_ACCOUNT_ACCESS_KEY
 - AZURE_STORAGE_CDN_URL
 
-> Note: While creating image folder names in storage providers, please use - in place of space, and lowercase in the name.
+> Note: While creating image folder names in storage providers, please use - in place of space, and lowercase in the name. -->
 
-### Invoices
+<!-- ### Invoices
 
 The system has a built-in PDF library to generate beautiful invoices for purchases made on the platform. Customers can download the order invoices from their order detail page. You can configure your preferences for invoices like the Title, paper size, and color, etc.
 
-The platform is all set to generate nicely formatted invoices without any configuration needed. To set your own preferences please open the config/invoice. file and change the default settings.
+The platform is all set to generate nicely formatted invoices without any configuration needed. To set your preferences please open the config/invoice. file and change the default settings.
 
 The default configuration:
 
@@ -584,9 +642,9 @@ The default configuration:
 
 By default, the system uses paper size A4 and title Invoices. You can also set the invoice color here, use hexadecimal color code.
 
-TIPs: Keep the title empty to use to allow the script to pick the title from the translated file.
+TIPs: Keep the title empty to use to allow the script to pick the title from the translated file. -->
 
-### Google Analytics
+<!-- ### Google Analytics
 
 The application has a basic visitor analytics system built-in. But if you want to use Google Analytics then the application can get your Google Analytics data on your admin dashboard and report section in place of the built-in system. By configuring Google Analytics API you can see Pageviews, Sessions, Unique visits, Referrals, and Behaviors of visitors on your marketplace admin dashboard. Before enabling Google Analytics you must configure the application correctly to get the Analytics data.
 
@@ -644,7 +702,7 @@ We’ve done the Google Analytics configuration and are ready to view the Analyt
 
 SETTINGS → CONFIGURATION → REPORTS
 
-> Note: Only admin role users can see Google Analytics reports.
+> Note: Only admin role users can see Google Analytics reports. -->
 
 ## Appearance
 
@@ -668,9 +726,147 @@ Admin can add a new banner, edit the existing banner in respected banner types. 
 
 ![Image](./anne/banner.png)
 
+## My Sales
+
+### Orders
+
+#### Search and filter orders
+
+- Orders can be found in the left sidebar on the “my sales → Orders” link.
+
+- By default, the orders list is organized from relevance. If there is a large number of orders, then you can use the search bar above the order list to find an order by customer detail, order id.
+
+- You can also filter your orders by
+
+  - Date
+  - Payment status
+  - Payment mode
+  - filter through the status
+
+![Image](./anne/order-list.png)
+
+#### Update order
+
+In the Order list when clicking on any order right at the arrow sign.
+
+![Image](./anne/order-update.png)
+
+- The order view page of the vendor is shown above. Here different blocks are available which
+  show all the information related to the order.
+
+**Order Details**
+
+- Order No-> It will show the order number in the top left corner starting from 'T'.
+- Order Date & Time-> Date and time on which the order was placed on the site.
+- Order Qty-> It will show the total qty of the order.
+- Subtotal-> It will show the total amount of items without tax, shipping charge, and discount of the order.
+- Tax-> It will show the total tax of the order.
+- Total-> It will show the total amount items, tax, shipping charge, and discount of the order.
+- Paid-> It will show the total paid amount of the order.
+- COD-> It will show the total cod amount (only in cod case) of the order.
+- Due-> It will show the total due amount of the order.
+- Method-> It will show the payment method of the order.
+
+- Ordered item-> This information will show how many products are ordered with their amount, quantity, and status
+- Status-> In order status admin can update the status of the order.
+
+- Customer-> Name and address of the customer will show up in this block.
+- Payment Details-> The payment method selected to place the order.
+
+**Sync Shipping**
+
+- At bottom of the left side, a sync shipping button is available, If an order did not sync with the shipping provider for any reason, then you can do it via clicking on this. It will not create make duplicate orders.
+
+![Image](./anne/order-update1.png)
+
+<!-- #### Create Order
+
+Sometimes you may need to create an order from the admin panel. Yes, you can do it! The system has an easy-to-use interface with all the needed features to create an order.
+
+Go to orders and then click over the CREATE ORDER. The next screen finds the customer you want to create the order for. Type the name/email/nice name, the result will show up soon. Select the customer and click PROCEED button to populate the order form. In the same way, you have to select the products, you can select multiple products.
+
+The order creation screen is self-descriptive. You can save the order to proceed later by choosing SAVE AND BACK or you can choose PLACE THE ORDER to process the order the right way. -->
+
+### Abandoned Carts
+
+- Abandonment Carts is an eCommerce feature where the admin can see all the abandoned carts, and manage them.
+- Abandoned cart is a cart of customers who add items to their online shopping cart, but exit without completing the purchase.
+
+![Image](./anne/abandoned-cart-list.png)
+
+- You can use the search bar for the filter.
+
+**Cart Export**
+
+- You can export all your carts in the CSV format by going to the manage abandoned cart page where the cart grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
+
+![Image](./anne/excel-and-search.png)
+
+### Payments
+
+#### Payment List
+
+- Payment section shows the payments list with details about the order customer has placed through the account.
+- It gives us information about the customer, payment status, and orderId.
+
+![Image](./anne/payment-list.png)
+
+- You can use the search bar for the filter.
+
+**Payment Export**
+
+- You can export all your payments in the CSV format by going to the list page where the payment grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
+
+![Image](./anne/excel-and-search.png)
+
+**Payment attributes**
+
+- Amount paid->It will show the amount that has been paid to the user.
+- Amount due->It will show the amount that has been due to the user.
+- Captured->It will show the amount that has been captured via the user.
+- Currency-> It will show the currency of the amount.
+- Status-> It will show the status of the payment.
+- Order Id-> It will show the order id of the payment.
+- Mode->It will show the payment mode to the user i.e. by which mode
+- the payment has been made to the user. like cod, online
+- Gateway->It will show the payment gateway used to pay.
+- Reference
+- Txmsg-> It will show the transaction message.
+- Tax->It will show the tax amount.
+- Fee-> It will show the transaction fee.
+- Txtime-> It will show the transaction time.
+- Email-> It will show the email address of the user.
+- Contact-> It will show the contact address of the user.
+- Invoice No-> It will show the invoice number of the order.
+- Error Code-> It will show the error if failed.
+- Error Description-> It will show the error description of the error.
+- Date-> It will show the date on which the customer has made the payment.
+
+### Wishlists
+
+- Wishlist is a simple listing feature available on the Anne app, It lets customers add and collect all the items that customers wish to purchase. All the products that customers want to own can now be put up in one easy-to-reach destination.
+
+![Image](./anne/wishlist-list.png)
+
+- You can use the search bar for the filter.
+
+**Wishlist Export**
+
+- You can export all your wishlists in the CSV format by going to the list page where the wishlist grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
+
+![Image](./anne/excel-and-search.png)
+
 ## Catalog
 
 The catalog is combined of product, category, product attribute, and manufacturer modules. With the help of these modules, you will be able to manage your marketplace product catalog effortlessly. All the functionalities you need are there.
+
+### Products
+
+- You can upload products in bulk using a CSV-formatted import file.
+- In the Product list page, click on `Import Products`.
+- It will redirect you to the product import page. There you can import a CSV file.
+
+![Image](./anne/product-import.png)
 
 ### Categories
 
@@ -703,6 +899,22 @@ The catalog is combined of product, category, product attribute, and manufacture
 -And you can also enable category features like- megamenu, active.
 
 - Edit category is the same as creating a new category, just select the category in a tree that you want to edit. Now you can update fields.
+
+### Reviews
+
+Review is nothing but a comment box in which customers give their reviews about the product that they have ordered & used. In this, the customer gives some ratings to the product in a form of stars and messages.
+
+- In the sidebar, go to Products → Reviews.
+
+![Image](./anne/reviews.png)
+
+- You can disable and delete the review from here.
+
+**Review Export**
+
+- You can export all your reviews in the CSV format by going to the manage reviews page where the review grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
+
+![Image](./anne/excel-and-search.png)
 
 ### Brands
 
@@ -759,14 +971,6 @@ In the size section, there are the sizes of the different products. It's a varia
 - You can export all your sizes in the CSV format by going to the manage sizes page where the sizes grid is displayed. On the right corner of the grid, there is an excel logo from where you can export the CSV which will have grid columns.
 
 ![Image](./anne/excel-and-search.png)
-
-### Products
-
-- You can upload products in bulk using a CSV-formatted import file.
-- In the Product list page, click on `Import Products`.
-- It will redirect you to the product import page. There you can import a CSV file.
-
-![Image](./anne/product-import.png)
 
 ### Popular Searches
 
@@ -945,13 +1149,30 @@ In CSV file, some fields are mandatory as shown below
 9. featured → featured is used for category. means category will be shown to customer or not.
 10. shopbycategory → shopbycategory will allow customers to filter products via category.
 11. brand_id → brand_id contains the unique brand Id which provided by the vendor. It will look for the brand and if found then assign it to a category.
-12. level → level is used to locate the category level because its uses a tree level approach.
+12. level → level is used to locate the category level because it uses a tree level approach.
 
 ::: warning
 
 Category use level-wise approach, Categories must be increasing format of level. Parent must come before its child.
 
 :::
+
+### Import Others
+
+Import Others is a feature that allows admin to import other modules as follows
+
+- Users
+- Banners
+- Blog
+- Brands
+- Colors
+- FAQ
+- Pages
+- Sizes
+
+all samples are available for download.
+
+![Image](./anne/import-others.png)
 
 ### Export
 
@@ -963,7 +1184,56 @@ Category use level-wise approach, Categories must be increasing format of level.
 
 ![Image](./anne/exports.png)
 
-## Discounts
+## Monitoring
+
+- Monitoring is a feature that allows you to monitor your product.
+- In the sidebar, go to monitoring.
+
+**Through this you can see the list of products of**
+
+1. No Stock
+2. No Image
+3. No Price
+4. Invalid Price
+5. No Description
+
+- You can edit and delete this product from here.
+- You can also add a new product from here via a click on the plus icon.
+- You will see a product like these
+
+![Image](./anne/monitoring.png)
+
+## Live Streaming
+
+Live Streaming is a feature that allows you to live to communicate with customers, So customers can better understand products.
+
+### Go Live
+
+- In the sidebar, go to Live Streaming → Go Live.
+
+  ![Image](./anne/live-stream1.png)
+
+- Admin can see a list of channels. Admin can edit details and also can go live from here.
+
+  ![Image](./anne/live-stream2.png)
+
+### Demo Requests
+
+- In the sidebar, go to Live Streaming → Demo Requests.
+- Admin can see a list of demo requests which was created via customers.
+- Admin also joins calls and also go live through here.
+
+![Image](./anne/live-stream3.png)
+
+### Stored Videos
+
+- In the sidebar, go to Live Streaming → Stored Videos.
+- Admin can see the list of stored videos.
+- Admin can watch videos and also delete videos.
+
+![Image](./anne/live-stream4.png)
+
+<!-- ## Discounts
 
 Offering a discount is the best way to get attraction from buyers. You can create an unlimited number of coupons for your store and you have full control over the promotions. You can set the validity period, total quantity, how many times a single buyer can get the discount, and more control. The coupon value can be a fixed amount or a percentage of the total order amount.
 
@@ -971,7 +1241,7 @@ Offering a discount is the best way to get attraction from buyers. You can creat
 You can create coupons that can be used by a single customer or a specific group of customers. To limit the coupon to customers check the LIMITED TO CUSTOMERS option and select customer/s.
 
 **Coupon for specific shipping zone/s**
-You can create coupons that can be used by the customers from a specific shipping zone of zones. To limit the coupon to the shipping zone check the LIMITED TO SHIPPING ZONE option and select shipping zone/s.
+You can create coupons that can be used by the customers from a specific shipping zone of zones. To limit the coupon to the shipping zone check the LIMITED TO SHIPPING ZONE option and select shipping zone/s. -->
 
 ## Support Desk
 
